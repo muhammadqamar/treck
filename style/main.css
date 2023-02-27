@@ -310,10 +310,7 @@ ul {
 
   color: #000000;
 }
-.recent-treks-section-div
-  .recent-treks-cards-list
-  .recent-treks-card-body
-  span {
+.recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body span {
   font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;

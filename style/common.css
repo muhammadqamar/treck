@@ -29,3 +29,54 @@
   margin-bottom: 48px;
   padding: 0px 20px;
 }
+
+.b-space {
+  margin-bottom: 24px !important;
+}
+
+/* buttons */
+.lx-space {
+  padding: 8px 40px !important;
+}
+.primary-btn {
+  width: fit-content;
+  height: auto;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1fa5d4;
+  font-family: "Nunito";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.secondary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 8px;
+  width: fit-content;
+  height: auto;
+  border-radius: 8px;
+}
+.secondary-btn img {
+  width: auto;
+  height: auto;
+}
+.red-rocket {
+  font-family: "Nunito";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ca2738;
+  background: rgba(202, 39, 56, 0.06);
+  border: 1px solid #ca2738;
+}
+
+/* calender tab */

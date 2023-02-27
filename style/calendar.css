@@ -1,0 +1,202 @@
+.calendar-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+.calendar-container .calendar-heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0 0 16px 0;
+}
+
+.calendar-container .calendar-flex-box {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+.calendar-container .calendar-flex-box .calendar-main {
+  width: 980px;
+  height: 676px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+.calendar-container .calendar-flex-box .calendar-right-box {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.calendar-container .calendar-flex-box .calendar-right-box .small-calendar {
+  width: 316px;
+  height: 264px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+.calendar-container .calendar-flex-box .calendar-right-box .rpa-segments-box {
+  width: 316px;
+  height: 224px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+.calendar-container .calendar-flex-box .calendar-right-box .rpa-segments-box .rpa-heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.calendar-container .calendar-flex-box .calendar-right-box .rpa-segments-box .rpa-segments-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-input {
+  width: 20px;
+  height: 20px;
+}
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 0%);
+}
+
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-label {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #979797;
+}
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-input.input-all {
+  border: 2px solid #0b5d7a;
+}
+
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-input.form-check-input.input-all:checked {
+  background-color: #0b5d7a;
+}
+
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-input.input-recall {
+  border: 2px solid #ca2738;
+}
+
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-input.form-check-input.input-recall:checked {
+  background-color: #ca2738;
+}
+
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-input.input-practiceA {
+  border: 2px solid #1fa5d4;
+}
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-input.form-check-input.input-practiceA:checked {
+  background-color: #1fa5d4;
+}
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-input.input-practiceB {
+  border: 2px solid #1fa5d4;
+}
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-input.form-check-input.input-practiceB:checked {
+  background-color: #1fa5d4;
+}
+
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-input.input-apply {
+  border: 2px solid #9fc33b;
+}
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form
+  .form-check
+  .form-check-input.form-check-input.input-apply:checked {
+  background-color: #9fc33b;
+}

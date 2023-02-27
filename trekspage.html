@@ -52,10 +52,7 @@
             <div class="header-notification-user">
               <!-- notification -->
               <div class="header-notification">
-                <img
-                  src="./assets/img/header_bell-notification.svg"
-                  alt="svg"
-                />
+                <img src="./assets/img/header_bell-notification.svg" alt="svg" />
               </div>
               <!-- user detail & Image  -->
               <div class="header-user">
@@ -91,6 +88,10 @@
           <li class="nav-section-selected">
             <img src="./assets/img/nav_treks_selected.svg" />
             <a href="/">TREKs</a>
+          </li>
+          <li>
+            <img src="./assets/img/calendar.svg" />
+            <a href="/">Calendar</a>
           </li>
           <li>
             <img src="./assets/img/nav_students.svg" />
@@ -129,9 +130,8 @@
             <!-- Description -->
             <div class="detail-prep-desc">
               <p>
-                Student Expectation: Observe and describe how a variety of
-                organisms survive by interacting with biotic and abiotic factors
-                in a healthy ecosystem.<br />
+                Student Expectation: Observe and describe how a variety of organisms survive by
+                interacting with biotic and abiotic factors in a healthy ecosystem.<br />
                 Readiness Standard | Organisms & Environments Strand
               </p>
             </div>
@@ -191,7 +191,159 @@
       <section class="trk-assign-section">
         <div class="trk-assign-section-div">
           <p>TREKs assigned to</p>
-          <a href="#">9 Students</a>
+          <button
+            class="students"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            9 Students
+          </button>
+        </div>
+        <div class="">
+          <button class="primary-btn lx-space">Assign</button>
+        </div>
+      </section>
+      <!-- students modal -->
+      <div
+        class="modal fade students-modal"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-header-title">
+                <img src="./assets/img/black-group.svg" alt="rocket" />
+                <h2 class="modal-title" id="exampleModalLabel">Student Progress</h2>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="students-breadcrumb">
+                <div class="interdependence-user">
+                  <img src="./assets/img/tr_main.png" alt="user" class="inter-user-img" />
+                  <h3 class="inter-user-name">5.12A Interdependence</h3>
+                </div>
+                <img
+                  src="./assets/img/bc_arrow_right.svg"
+                  alt="user"
+                  class="students-breadcrumb-arrow"
+                />
+                <div class="interdependence-tab">
+                  <div class="inter-tab-polygon">
+                    <h4>R</h4>
+                  </div>
+                  <h3 class="inter-tab-polygon-name">Recall</h3>
+                </div>
+              </div>
+              <div class="students-table">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Student</th>
+                      <th>Status</th>
+                      <th>Progress</th>
+                      <th>Score (%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="table-user">
+                          <img src="./assets/img/header_avatar.svg" alt="user" />
+                          <div class="user-about">
+                            <h5>Jane Cooper</h5>
+                            <p>5th grade</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td><div class="table-status">Completed</div></td>
+                      <td>10 /10</td>
+                      <td>80</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="table-user">
+                          <img src="./assets/img/header_avatar.svg" alt="user" />
+                          <div class="user-about">
+                            <h5>Jane Cooper</h5>
+                            <p>5th grade</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td><div class="table-status">Completed</div></td>
+                      <td>10 /10</td>
+                      <td>80</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="table-user">
+                          <img src="./assets/img/header_avatar.svg" alt="user" />
+                          <div class="user-about">
+                            <h5>Jane Cooper</h5>
+                            <p>5th grade</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td><div class="table-status">Completed</div></td>
+                      <td>10 /10</td>
+                      <td>80</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <section class="trk-assign-section">
+        <div class="trk-assign-section-div">
+          <h2 class="">Teacher Instructions</h2>
+        </div>
+        <div>
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#calendarModal"
+            class="secondary-btn red-rocket"
+          >
+            Digital Student Journal <img src="./assets/img/red-rocket.svg" alt="rocket" />
+          </button>
+        </div>
+
+        <div
+          class="modal fade"
+          id="calendarModal"
+          tabindex="-1"
+          aria-labelledby="calendarModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-header-title">
+                  <img src="./assets/img/black-group.svg" alt="rocket" />
+                  <h2 class="modal-title" id="calendarModalLabel">Student Progress</h2>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body"></div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -202,16 +354,16 @@
           <div class="central-cncpt-list-div">
             <ul>
               <li class="text-style-prep-cm">
-                All of life depends on basic needs including food, shelter, air,
-                and space for habitat.
+                All of life depends on basic needs including food, shelter, air, and space for
+                habitat.
               </li>
               <li class="text-style-prep-cm">
-                All living organisms interact with other living and nonliving
-                parts of their ecosystems.
+                All living organisms interact with other living and nonliving parts of their
+                ecosystems.
               </li>
               <li class="text-style-prep-cm">
-                Living organisms rely on this integration of living and
-                nonliving components to grow and reproduce.
+                Living organisms rely on this integration of living and nonliving components to grow
+                and reproduce.
               </li>
             </ul>
           </div>
@@ -230,8 +382,8 @@
             <div class="list-detail">
               <h5>Review: “What Do Living Things Need?”</h5>
               <p class="text-style-prep-cm">
-                Students recall prior knowledge of the basic needs of all
-                organisms in their environment with transparent thinking.
+                Students recall prior knowledge of the basic needs of all organisms in their
+                environment with transparent thinking.
               </p>
             </div>
           </div>
@@ -243,10 +395,9 @@
             <div class="list-detail">
               <h5>Investigation: Rain & Shine</h5>
               <p class="text-style-prep-cm">
-                Students collect and analyze data in a simulated comparative
-                investigation to answer the research question, “How does
-                sunlight and water affect plant growth?” An optional STEAM
-                extension on creating non-linguistic visualizations of data.
+                Students collect and analyze data in a simulated comparative investigation to answer
+                the research question, “How does sunlight and water affect plant growth?” An
+                optional STEAM extension on creating non-linguistic visualizations of data.
               </p>
             </div>
           </div>
@@ -258,10 +409,9 @@
             <div class="list-detail">
               <h5>In the Field: Billie the Birdwatcher</h5>
               <p class="text-style-prep-cm">
-                Students actively read and reflect as field scientists, support
-                a second hand field investigation with Billie the Birdwatcher,
-                and identify appropriate habitats for three North American bird
-                species.
+                Students actively read and reflect as field scientists, support a second hand field
+                investigation with Billie the Birdwatcher, and identify appropriate habitats for
+                three North American bird species.
               </p>
             </div>
           </div>
@@ -273,10 +423,9 @@
             <div class="list-detail">
               <h5>Mission: The Great Turtle Rescue</h5>
               <p class="text-style-prep-cm">
-                Students embark on a task-based problem-solving real-world
-                scenario with a mission for a wildlife release in a nearby
-                wildlife refuge using habitat maps adapted from Brazoria
-                National Wildlife Refuge of coastal eastern Texas.
+                Students embark on a task-based problem-solving real-world scenario with a mission
+                for a wildlife release in a nearby wildlife refuge using habitat maps adapted from
+                Brazoria National Wildlife Refuge of coastal eastern Texas.
               </p>
             </div>
           </div>
@@ -288,9 +437,7 @@
         <div class="intg-stand-section-div">
           <!-- heading -->
           <div class="intg-stand-heading">
-            <h3 class="text-style-heading-s2-cm">
-              Integrated Standards Alignment
-            </h3>
+            <h3 class="text-style-heading-s2-cm">Integrated Standards Alignment</h3>
           </div>
 
           <!-- Looking Behind: -->
@@ -306,14 +453,12 @@
               </ul>
               <ul class="sub-detal">
                 <li class="text-style-prep-cm">
-                  3.9A Investigate that most producers need sunlight, water, and
-                  carbon dioxide to make their own food, while consumers are
-                  dependent on other organisms for food.
+                  3.9A Investigate that most producers need sunlight, water, and carbon dioxide to
+                  make their own food, while consumers are dependent on other organisms for food.
                 </li>
                 <li class="text-style-prep-cm">
-                  3.9A Investigate that most producers need sunlight, water, and
-                  carbon dioxide to make their own food, while consumers are
-                  dependent on other organisms for food.
+                  3.9A Investigate that most producers need sunlight, water, and carbon dioxide to
+                  make their own food, while consumers are dependent on other organisms for food.
                 </li>
               </ul>
             </div>
@@ -331,13 +476,12 @@
               </ul>
               <ul class="sub-detal">
                 <li class="text-style-prep-cm">
-                  6.12E Describe biotic and abiotic parts of an ecosystem in
-                  which organisms interact.
+                  6.12E Describe biotic and abiotic parts of an ecosystem in which organisms
+                  interact.
                 </li>
                 <li class="text-style-prep-cm">
-                  7.10A Observe and describe how different environments,
-                  including microhabitats in schoolyards and biomes, support
-                  different varieties of organisms.
+                  7.10A Observe and describe how different environments, including microhabitats in
+                  schoolyards and biomes, support different varieties of organisms.
                 </li>
               </ul>
             </div>
