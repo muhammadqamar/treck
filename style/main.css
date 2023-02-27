@@ -1,0 +1,796 @@
+/* Common Style Rules */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@font-face {
+  font-family: "Droid Sans";
+  src: url("../assets/fonts/droid-sans/DroidSans.ttf");
+}
+:root {
+  /* Color Variables */
+  --main-color-black: #000000;
+  --main-color-white: #ffffff;
+  /* Font variables */
+  --main-primary-font: "Nunito", sans-serif;
+  --main-secondary-font: "Droid Sans";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e5e5 !important;
+}
+
+/* ******************************** Section Base Style */
+
+/* Common Class Style */
+.main-container {
+  max-width: 1200px;
+  margin: 0px auto;
+  margin-bottom: 48px;
+  padding: 0px 20px;
+}
+
+.section-div-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+.section-div-header h2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.section-div-header a {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+/* Header Section Style */
+
+.header-section {
+  background-color: var(--main-color-white);
+  height: 80px;
+}
+
+.header-section-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo-search {
+  display: flex;
+}
+ul {
+  padding-left: 0 !important;
+}
+.header-logo {
+  padding: 16px 0px 16px 16px;
+}
+
+.header-search {
+  border: 1px solid #979797;
+  border-radius: 8px;
+  width: 320px;
+
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 48px;
+}
+@media (max-width: 991px) {
+  .header-search {
+    width: 100%;
+
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+}
+
+.header-search input {
+  display: block;
+  border: none;
+  outline: none;
+
+  /* font-family: var(--main-secondary-font); */
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.header-notification-user {
+  display: flex;
+}
+.header-notification {
+  cursor: pointer;
+  padding-top: 30px;
+  padding-bottom: 34px;
+  margin-right: 35px;
+}
+.header-user {
+  display: flex;
+}
+.header-user .user-avatar {
+  padding: 16px 0;
+  margin-right: 6px;
+}
+
+.header-user .user-detail {
+  padding-top: 16px;
+}
+
+.header-user .user-detail span:nth-child(1) {
+  display: block;
+  font-family: var(--main-primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--main-color-black);
+}
+
+.header-user .user-detail span:nth-child(2) {
+  display: block;
+  font-family: var(--main-secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #979797;
+}
+.header-user .user-options {
+  cursor: pointer;
+  padding-top: 37px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+/* Nav Section Style */
+
+.nav-section {
+  padding-top: 40px;
+}
+
+.nav-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+.nav-section ul li {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  justify-content: center;
+  padding-bottom: 8px;
+  padding-top: 6px;
+  border-bottom: 1px solid #eaedf1;
+}
+
+.nav-section ul li a {
+  display: block;
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #979797;
+}
+.nav-section ul .nav-section-selected a {
+  color: #0b5d7a;
+}
+.nav-section ul .nav-section-selected {
+  border-bottom: 1px solid #0b5d7a;
+}
+/* .nav-section ul .nav-section-selected {
+    padding-bottom: 8px;
+    border-bottom-width: max-content;
+    border-bottom: 1px solid #0b5d7a;
+} */
+
+/* Reminders: section */
+.reminder-section {
+  margin-top: 32px;
+}
+.reminder-section-div {
+  /* height: 48px; */
+  background: #ffffff;
+  border: 1px solid #979797;
+  border-radius: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 19px;
+  padding-right: 22px;
+  flex-wrap: wrap;
+  padding: 12px 20px;
+}
+.reminder-section-div .reminder-title {
+  display: flex;
+  align-items: center;
+}
+
+.reminder-section-div .reminder-title span {
+  margin-left: 11px;
+  display: block;
+}
+
+.reminder-section-div .reminder-detail span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #979797;
+}
+.reminder-section-div .reminder-vli {
+  padding-right: 16px;
+  border-right: 1px solid #979797;
+  padding-left: 16px;
+}
+.reminder-section-div .reminder-arrow {
+  cursor: pointer;
+}
+
+/* Recent TREKs */
+.recent-treks-section {
+  padding-top: 24px;
+}
+.recent-treks-section-div {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+}
+.recent-treks-section-div .recent-treks-header {
+  /* display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px; */
+  border-bottom: 1px solid #eaedf1;
+}
+.recent-treks-section-div .recent-treks-header h2 {
+  /* font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000; */
+}
+.recent-treks-section-div .recent-treks-header a {
+  /* font-family: "Nunito";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration-line: underline; */
+  color: #0b5d7a;
+}
+
+.recent-treks-section-div .recent-treks-cards-list {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 16px;
+}
+
+.recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body {
+  width: 280px;
+}
+@media (max-width: 400px) {
+  .recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body {
+    width: 100% !important;
+  }
+}
+.recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body h3 {
+  max-width: 210px;
+  margin-top: 8px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #000000;
+}
+.recent-treks-section-div
+  .recent-treks-cards-list
+  .recent-treks-card-body
+  span {
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #979797;
+}
+
+/* Pending Assignments */
+.pending-assignments-section {
+  margin-top: 24px;
+}
+.pending-assignments-section-div {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+}
+.pending-assignments-section-div .pending-assignments-header {
+  border-bottom: 1px solid #eaedf1;
+}
+.pending-assignments-section-div .pending-assignments-header a {
+  color: #0b5d7a;
+}
+.pending-assignments-section-div .pending-assignments-table {
+  margin-top: 16px;
+}
+
+.pending-assignments-section-div .pending-assignments-table table {
+  width: 100%;
+  border-spacing: 0px;
+  table-layout: fixed;
+  /* border: 1px solid red; */
+}
+.pending-assignments-table table thead {
+  background: #f6f7fa;
+}
+.pending-assignments-table table thead tr th {
+  padding: 8px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-align: left;
+}
+
+.pending-assignments-table table tbody tr td {
+  padding: 20px 8px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #000000;
+  border-bottom: 1px solid #eaedf1;
+}
+.assignments-table-cs-td-poly .polygon-shap {
+  width: 48px;
+  height: 48px;
+  background-color: #1fa5d4;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.assignments-table-cs-td-poly {
+  display: flex;
+}
+.assignments-table-cs-td-poly div:nth-child(2) span {
+  margin-left: 8px;
+  display: block;
+}
+.assignments-table-cs-td-poly div:nth-child(2) span:nth-child(2) {
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  /* identical to box height, or 160% */
+
+  /* Secondary/Gray-4 */
+
+  color: #979797;
+}
+.assignments-table-cs-td-poly .polygon-shap span {
+  display: block;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+/* Calendar &  Activities Completed Overall */
+.clen-act-section {
+  margin-top: 24px;
+}
+
+.clen-act-section-div {
+  display: flex;
+  gap: 0px 24px;
+}
+.calendar-portion {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  height: 392px;
+}
+.calendar-portion .calendar-portion-header {
+  border-bottom: 1px solid #000000;
+}
+.calendar-portion .calendar-portion-header a {
+  color: #0b5d7a;
+}
+/* activities portion */
+.activities-portion {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.activities-portion .activities-portion-header {
+  border-bottom: 1px solid #000000;
+}
+.activities-portion .activities-portion-header a {
+  color: #0b5d7a;
+}
+
+.activities-portion .activities-portion-prap {
+  margin-top: 16px;
+}
+.activities-portion .activities-portion-prap {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.activities-portion .activities-portion-progress {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.activities-portion .activities-portion-progress .portion-progress-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.activities-portion .activities-portion-progress .portion-progress-div p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+/* Media  Query  */
+@media only screen and (max-width: 1120px) {
+  .reminder-section-div {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .reminder-section-div .reminder-vli {
+    padding-right: 6px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .reminder-section-div {
+    flex-direction: column;
+    height: max-content;
+  }
+  .reminder-section-div .reminder-vli {
+    border-right: none;
+    /* border-bottom: 1px solid #979797; */
+  }
+  .reminder-section-div .reminder-detail {
+    border-bottom: 1px solid #979797;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pending-assignments-section-div .pending-assignments-table {
+    overflow-x: scroll;
+  }
+  .pending-assignments-section-div .pending-assignments-table table {
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 606px) {
+  .recent-treks-section-div .recent-treks-cards-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .clen-act-section-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .calendar-portion {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .activities-portion {
+    width: 100%;
+  }
+}
+/* Nav style */
+nav.navbar {
+  background: #fff !important;
+  padding: 0;
+}
+.nav_section_treks {
+  padding-top: 32px;
+}
+.nav_container {
+  margin-bottom: 0;
+}
+
+/* TREKs Styling */
+
+.treks_main_container {
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 0;
+}
+.nav_container {
+  margin-bottom: 0;
+}
+.main-container .filter_treks_flx {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+@media (max-width: 767px) {
+  .main-container .filter_treks_flx {
+    flex-direction: column;
+  }
+}
+.filter_treks_section {
+  padding-top: 0;
+}
+.filter_my_treks_sec {
+  width: 100%;
+}
+.filter_section {
+  padding: 0;
+}
+.filter_section h2 {
+  margin: 0;
+}
+
+.filter_treks_section .treks_bottom_border {
+  border-bottom: 1px solid #eaedf1;
+}
+.filter_treks_section .treks_bottom_border .filter_treks_heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 20px 0;
+  padding-left: 8px;
+}
+.recent_filter_treks_div {
+  height: 100%;
+  width: 260px;
+}
+@media (max-width: 1207px) {
+  .recent_filter_treks_div {
+    height: auto;
+  }
+  @media (max-width: 480px) {
+    .recent_filter_treks_div {
+      width: 100%;
+    }
+  }
+}
+.filter_section .filter_bx {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-right: 58px;
+}
+.treks_card_list {
+  gap: 24px !important;
+}
+.treks_card_body {
+  width: 265px !important;
+}
+.treks_card_body div img {
+  width: 100%;
+}
+.treks_inner_flx {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.sort_flex_bx {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+}
+.sort_flex_bx p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #979797;
+}
+.filter_section a {
+  /* font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline; */
+  color: #0b5d7a;
+}
+@media (max-width: 516px) {
+  .treks_nav .treks_ul li a {
+    margin-left: 9px;
+    font-size: 16px;
+  }
+}
+
+/* Interpendence Practice */
+.nav_section_interpendence {
+  padding: 32px 0;
+}
+.interpendence_content_section {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px 32px;
+}
+.interpendence_content_section .practice_img {
+  width: 100%;
+}
+.treks_practice_bx {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 24px;
+}
+.practice_flx {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.practice_text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #979797;
+}
+.interpendence_text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.student_text {
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+/* tabs styling */
+
+.treks_ul li {
+  padding: 0 !important;
+}
+.nav-link {
+  width: 100%;
+  flex: 1;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8px;
+  padding-top: 6px;
+  border-bottom: 1px solid #eaedf1;
+}
+.nav-link.active {
+  color: #0b5d7a !important;
+  border-bottom: 2px solid #0b5d7a !important;
+  padding-bottom: 8px;
+  padding-top: 6px;
+}
+.tab-content > .active {
+  display: flex !important;
+}
+.nav-section ul li button {
+  display: block;
+  border: none;
+  background: none;
+  /* margin-left: 10px; */
+  text-decoration: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #979797;
+}
+@media (max-width: 480px) {
+  .nav-section ul li button {
+    margin-left: 10px;
+  }
+}
+.nav-section ul li button:hover {
+  color: #979797;
+}
+.nav-section ul .nav-section-selected a {
+  color: #0b5d7a;
+}
+.nav-section ul .nav-section-selected {
+  border-bottom: 2px solid #0b5d7a;
+}
+
+/*  */
+
+.treks_nav {
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.nav-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+.nav-section .treks_ul {
+  max-width: 640px;
+  width: 100%;
+}
+.nav-section ul li {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  /* border: 1px solid red; */
+  justify-content: center;
+  padding-bottom: 8px;
+  padding-top: 6px;
+  border-bottom: 1px solid #eaedf1;
+}
+
+.nav-section ul li a {
+  display: block;
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #979797;
+}

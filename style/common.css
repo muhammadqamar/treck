@@ -1,0 +1,31 @@
+/* Common Style Rules */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@font-face {
+  font-family: "Droid Sans";
+  src: url("../assets/fonts/droid-sans/DroidSans.ttf");
+}
+:root {
+  /* Color Variables */
+  --main-color-black: #000000;
+  --main-color-white: #ffffff;
+  /* Font variables */
+  --main-primary-font: "Nunito", sans-serif;
+  --main-secondary-font: "Droid Sans";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: #e5e5e5 !important;
+} */
+
+/* Common Class Style */
+.main-container {
+  max-width: 1200px;
+  margin: 0px auto;
+  margin-bottom: 48px;
+  padding: 0px 20px;
+}
