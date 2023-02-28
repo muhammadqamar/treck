@@ -107,7 +107,118 @@
     </section>
 
     <section class="calendar-container">
-      <h1 class="calendar-heading">Calendar</h1>
+      <div class="d-flex align-content-center justify-content-between mb-3">
+        <h1 class="calendar-heading m-0">Calendar</h1>
+        <button
+          type="button"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          class="primary-btn"
+        >
+          Open Modal
+        </button>
+        <div
+          class="modal fade students-modal"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-header-title">
+                  <img src="./assets/img/black-group.svg" alt="rocket" />
+                  <h2 class="modal-title" id="exampleModalLabel">Student Progress</h2>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="students-breadcrumb">
+                  <div class="interdependence-user">
+                    <img src="./assets/img/tr_main.png" alt="user" class="inter-user-img" />
+                    <h3 class="inter-user-name">5.12A Interdependence</h3>
+                  </div>
+                  <img
+                    src="./assets/img/bc_arrow_right.svg"
+                    alt="user"
+                    class="students-breadcrumb-arrow"
+                  />
+                  <div class="interdependence-tab">
+                    <div class="inter-tab-polygon">
+                      <h4>R</h4>
+                    </div>
+                    <h3 class="inter-tab-polygon-name">Recall</h3>
+                  </div>
+                </div>
+                <div class="students-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Student</th>
+                        <th>Status</th>
+                        <th>Progress</th>
+                        <th>Score (%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="table-user">
+                            <img src="./assets/img/header_avatar.svg" alt="user" />
+                            <div class="user-about">
+                              <h5>Jane Cooper</h5>
+                              <p>5th grade</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td><div class="table-status">Completed</div></td>
+                        <td>10 /10</td>
+                        <td>80</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table-user">
+                            <img src="./assets/img/header_avatar.svg" alt="user" />
+                            <div class="user-about">
+                              <h5>Jane Cooper</h5>
+                              <p>5th grade</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td><div class="table-status">Completed</div></td>
+                        <td>10 /10</td>
+                        <td>80</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table-user">
+                            <img src="./assets/img/header_avatar.svg" alt="user" />
+                            <div class="user-about">
+                              <h5>Jane Cooper</h5>
+                              <p>5th grade</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td><div class="table-status">Completed</div></td>
+                        <td>10 /10</td>
+                        <td>80</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="calendar-flex-box">
         <div class="calendar-main"></div>
         <div class="calendar-right-box">

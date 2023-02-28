@@ -550,7 +550,11 @@ ul {
 
 .students-modal .modal-content .modal-header .modal-header-title img,
 .students-modal .modal-content .modal-header .btn-close,
-.assignment-modal .modal-content .modal-body .assignment-modal-left .assignment-left-header img {
+.assignment-modal .modal-content .modal-body .assignment-modal-left .assignment-left-header img,
+.students-modal .modal-content .modal-body .students-breadcrumb .students-breadcrumb-arrow,
+.students-modal .modal-content .modal-body .filters-students .filter-header .filter img,
+.students-modal .modal-content .modal-body .filters-students .filter-header .filter-sort-by img,
+.students-modal .modal-content .modal-body .filters-students .student .report img {
   width: 24px;
   height: 24px;
 }
@@ -599,10 +603,6 @@ ul {
   line-height: 24px;
   color: #000000;
   margin: 0;
-}
-.students-modal .modal-content .modal-body .students-breadcrumb .students-breadcrumb-arrow {
-  width: 24px;
-  height: 24px;
 }
 
 .students-modal
@@ -809,7 +809,9 @@ ul {
   align-items: center;
   gap: 8px;
 }
-.assignment-modal .modal-content .modal-body .assignment-modal-left .assignment-left-header p {
+.assignment-modal .modal-content .modal-body .assignment-modal-left .assignment-left-header p,
+.students-modal .modal-content .modal-body .filters-students .filter-header .filter p,
+.students-modal .modal-content .modal-body .filters-students .filter-header .filter-sort-by p {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
@@ -1053,7 +1055,8 @@ ul {
   .assignment-search-result
   .search-user
   .user-name-detail
-  h5 {
+  h5,
+.students-modal .modal-content .modal-body .filters-students .student .detail h6 {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
@@ -1070,13 +1073,80 @@ ul {
   .assignment-search-result
   .search-user
   .user-name-detail
-  p {
+  p,
+.students-modal .modal-content .modal-body .filters-students .student .detail p {
   font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 16px;
   color: #979797;
+  margin: 0;
+}
+
+.students-modal .modal-content .modal-body .filters-students {
+  padding: 8px;
+}
+
+.students-modal .modal-content .modal-body .filters-students .filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 16px;
+  gap: 8px;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eaedf1;
+  margin-bottom: 8px;
+}
+
+.students-modal .modal-content .modal-body .filters-students .filter-header .filter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.students-modal .modal-content .modal-body .filters-students .filter-header .filter-sort-by {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.students-modal .modal-content .modal-body .filters-students .student {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4px;
+  border-bottom: 1px solid #eaedf1;
+}
+
+.students-modal .modal-content .modal-body .filters-students .student .user-details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.students-modal .modal-content .modal-body .filters-students .student .user-details .user {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.students-modal .modal-content .modal-body .filters-students .student .report {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+.students-modal .modal-content .modal-body .filters-students .student .report a {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #0b5d7a;
   margin: 0;
 }
 
