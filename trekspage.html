@@ -201,7 +201,88 @@
           </button>
         </div>
         <div class="">
-          <button class="primary-btn lx-space">Assign</button>
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#calendarModal"
+            class="primary-btn lx-space"
+          >
+            Assign
+          </button>
+          <div
+            class="modal fade assignment-modal"
+            id="calendarModal"
+            tabindex="-1"
+            aria-labelledby="calendarModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <!-- left side -->
+                  <div class="assignment-modal-left">
+                    <div class="assignment-left-header">
+                      <img src="./assets/img/calendar.svg" alt="calendar" />
+                      <p>Calendar</p>
+                    </div>
+                    <div class="assignment-left-detail">
+                      <h1>New assignment</h1>
+                      <p>You are creating a new assignment for the following content:</p>
+                    </div>
+                    <div class="assignment-left-label">
+                      <h6 class="taek-label">TREK</h6>
+                      <div class="interdependence-user">
+                        <img src="./assets/img/tr_main.png" alt="user" class="inter-user-img" />
+                        <h3 class="inter-user-name">5.12A Interdependence</h3>
+                      </div>
+                      <h6 class="taek-label">RPA Segment</h6>
+                      <div class="recall-user">
+                        <div class="inter-tab-polygon">
+                          <h4>R</h4>
+                        </div>
+                        <h3 class="inter-user-name">Recall</h3>
+                      </div>
+                    </div>
+                    <div class="assignment-search">
+                      <h6 class="taek-label">Student name</h6>
+                      <input type="text" class="ass-search-input" placeholder="Type student name" />
+
+                      <div class="assignment-search-result">
+                        <div class="search-user">
+                          <img src="./assets/img/rec_tre_img2.svg" alt="user" />
+                          <div class="user-name-detail">
+                            <h5>Jane Cooper</h5>
+                            <p>5th grade</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- right side -->
+                  <div class="assignment-modal-right">
+                    <div class="assignment-right-header">
+                      <div class="modal-header-title">
+                        <h2 class="modal-title" id="calendarModalLabel">
+                          Please select a schedule to create this assignment
+                        </h2>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="assignment-calendar"></div>
+                    <div class="assignment-right-btn">
+                      <button class="assignment-right-cancel">Cancel</button>
+                      <button class="primary-btn bg-gray-3-color">Create assignment</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- students modal -->
@@ -310,89 +391,9 @@
           <h2 class="">Teacher Instructions</h2>
         </div>
         <div>
-          <button
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#calendarModal"
-            class="secondary-btn red-rocket"
-          >
+          <button class="secondary-btn red-rocket">
             Digital Student Journal <img src="./assets/img/red-rocket.svg" alt="rocket" />
           </button>
-        </div>
-
-        <div
-          class="modal fade assignment-modal"
-          id="calendarModal"
-          tabindex="-1"
-          aria-labelledby="calendarModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body">
-                <!-- left side -->
-                <div class="assignment-modal-left">
-                  <div class="assignment-left-header">
-                    <img src="./assets/img/calendar.svg" alt="calendar" />
-                    <p>Calendar</p>
-                  </div>
-                  <div class="assignment-left-detail">
-                    <h1>New assignment</h1>
-                    <p>You are creating a new assignment for the following content:</p>
-                  </div>
-                  <div class="assignment-left-label">
-                    <h6 class="taek-label">TREK</h6>
-                    <div class="interdependence-user">
-                      <img src="./assets/img/tr_main.png" alt="user" class="inter-user-img" />
-                      <h3 class="inter-user-name">5.12A Interdependence</h3>
-                    </div>
-                    <h6 class="taek-label">RPA Segment</h6>
-                    <div class="recall-user">
-                      <div class="inter-tab-polygon">
-                        <h4>R</h4>
-                      </div>
-                      <h3 class="inter-user-name">Recall</h3>
-                    </div>
-                  </div>
-                  <div class="assignment-search">
-                    <h6 class="taek-label">Student name</h6>
-                    <input type="text" class="ass-search-input" placeholder="Type student name" />
-
-                    <div class="assignment-search-result">
-                      <div class="search-user">
-                        <img src="./assets/img/rec_tre_img2.svg" alt="user" />
-                        <div class="user-name-detail">
-                          <h5>Jane Cooper</h5>
-                          <p>5th grade</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- right side -->
-                <div class="assignment-modal-right">
-                  <div class="assignment-right-header">
-                    <div class="modal-header-title">
-                      <h2 class="modal-title" id="calendarModalLabel">
-                        Please select a schedule to create this assignment
-                      </h2>
-                    </div>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="assignment-calendar"></div>
-                  <div class="assignment-right-btn">
-                    <button class="assignment-right-cancel">Cancel</button>
-                    <button class="primary-btn bg-gray-3-color">Create assignment</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
