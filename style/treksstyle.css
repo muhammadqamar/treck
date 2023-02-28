@@ -481,10 +481,7 @@ ul {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.intg-stand-section-div {
-}
-.intg-stand-section-div .intg-stand-heading {
-}
+
 .intg-stand-section-div .intg-stand-detail-list {
   margin-top: 24px;
 }
@@ -516,7 +513,10 @@ ul {
   margin-left: 46px;
 }
 
-.students-modal {
+/* students modal */
+
+.students-modal,
+.assignment-modal {
   background-color: rgba(31, 165, 212, 0.24);
 }
 .students-modal .modal-dialog {
@@ -549,12 +549,14 @@ ul {
 }
 
 .students-modal .modal-content .modal-header .modal-header-title img,
-.students-modal .modal-content .modal-header .btn-close {
+.students-modal .modal-content .modal-header .btn-close,
+.assignment-modal .modal-content .modal-body .assignment-modal-left .assignment-left-header img {
   width: 24px;
   height: 24px;
 }
 
-.students-modal .modal-content .modal-body {
+.students-modal .modal-content .modal-body,
+.assignment-modal .modal-content .modal-body {
   padding: 0;
 }
 .students-modal .modal-content .modal-body .students-breadcrumb {
@@ -608,6 +610,12 @@ ul {
   .modal-body
   .students-breadcrumb
   .interdependence-tab
+  .inter-tab-polygon,
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-left
+  .recall-user
   .inter-tab-polygon {
   width: 38px;
   height: 32px;
@@ -624,6 +632,13 @@ ul {
   .students-breadcrumb
   .interdependence-tab
   .inter-tab-polygon
+  h4,
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-left
+  .recall-user
+  .inter-tab-polygon
   h4 {
   font-family: "Nunito";
   font-weight: 700;
@@ -637,7 +652,8 @@ ul {
   .modal-body
   .students-breadcrumb
   .interdependence-tab
-  .inter-tab-polygon-name {
+  .inter-tab-polygon-name,
+.assignment-modal .modal-content .modal-body .assignment-modal-left .recall-user .inter-user-name {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
@@ -762,4 +778,322 @@ ul {
   font-size: 12px;
   line-height: 16px;
   color: #ffffff;
+}
+
+/* assignment modal */
+.assignment-modal .modal-content {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.assignment-modal .modal-dialog {
+  max-width: 1200px;
+}
+.assignment-modal .modal-content .modal-body {
+  display: flex;
+}
+
+.assignment-modal .modal-content .modal-body .assignment-modal-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 32px;
+  width: 400px;
+  flex-shrink: 0;
+  height: 707px;
+  background: #f6f7fa;
+}
+.assignment-modal .modal-content .modal-body .assignment-modal-left .assignment-left-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.assignment-modal .modal-content .modal-body .assignment-modal-left .assignment-left-header p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #979797;
+  margin: 0;
+}
+
+.assignment-modal .modal-content .modal-body .assignment-modal-left .assignment-left-detail h1 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin: 0 0 8px;
+}
+.assignment-modal .modal-content .modal-body .assignment-modal-left .assignment-left-detail p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+.assignment-modal .modal-content .modal-body .assignment-modal-left .interdependence-user {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  gap: 12px;
+  width: 100%;
+  height: auto;
+  background: #eaedf1;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-left
+  .interdependence-user
+  .inter-user-img {
+  width: 48px;
+  height: 48px;
+  object-fit: fill;
+  border-radius: 50%;
+}
+
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-left
+  .interdependence-user
+  .inter-user-name {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+.assignment-modal .modal-content .modal-body .assignment-modal-left .assignment-left-label {
+  width: 100%;
+}
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-left
+  .assignment-left-label
+  .taek-label,
+.assignment-modal .modal-content .modal-body .assignment-modal-left .assignment-search .taek-label {
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #979797;
+  margin: 0;
+  padding-left: 8px;
+}
+
+.assignment-modal .modal-content .modal-body .assignment-modal-left .recall-user {
+  display: flex;
+  align-items: center;
+  padding: 12px 8px 12px 12px;
+  gap: 12px;
+  width: 100%;
+  height: auto;
+  background: rgba(202, 39, 56, 0.16);
+  border-radius: 8px;
+}
+
+.assignment-modal .modal-content .modal-body .assignment-modal-left .assignment-search {
+  width: 100%;
+}
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-left
+  .assignment-search
+  .ass-search-input {
+  padding: 8px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #979797;
+  border-radius: 8px;
+  outline: none;
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.assignment-modal .modal-content .modal-body .assignment-modal-right {
+  background: #ffffff;
+  padding: 16px 16px 24px;
+  width: 100%;
+}
+.assignment-modal .modal-content .modal-body .assignment-modal-right .assignment-right-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 2px solid #eaedf1;
+  margin-bottom: 16px;
+}
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-right
+  .assignment-right-header
+  .modal-header-title
+  h2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+.assignment-modal .modal-content .modal-body .assignment-modal-right .assignment-calendar {
+  width: 100%;
+  height: 547px;
+  background: #f6f7fa;
+  border: 1px solid #eaedf1;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+.assignment-modal .modal-content .modal-body .assignment-modal-right .assignment-right-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-right
+  .assignment-right-btn
+  .assignment-right-cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 8px;
+  width: fit-content;
+  height: auto;
+  border: 1px solid #1fa5d4;
+  border-radius: 8px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1fa5d4;
+  background: transparent;
+}
+
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-left
+  .assignment-search
+  .assignment-search-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 2px 8px rgba(31, 165, 212, 0.08);
+  border-radius: 8px;
+}
+
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-left
+  .assignment-search
+  .assignment-search-result
+  .search-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px;
+  gap: 12px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #eaedf1;
+  border-radius: 8px;
+}
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-left
+  .assignment-search
+  .assignment-search-result
+  .search-user
+  img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-left
+  .assignment-search
+  .assignment-search-result
+  .search-user
+  .user-name-detail
+  h5 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+.assignment-modal
+  .modal-content
+  .modal-body
+  .assignment-modal-left
+  .assignment-search
+  .assignment-search-result
+  .search-user
+  .user-name-detail
+  p {
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #979797;
+  margin: 0;
+}
+
+/* media responsive */
+
+@media (max-width: 992px) {
+  .assignment-modal .modal-content .modal-body {
+    flex-direction: column;
+  }
+
+  .assignment-modal .modal-content .modal-body .assignment-modal-left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1340px) {
+  .assignment-modal .modal-dialog {
+    padding: 0 24px;
+  }
 }

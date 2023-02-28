@@ -38,6 +38,9 @@
 .lx-space {
   padding: 8px 40px !important;
 }
+.bg-gray-3-color {
+  background: #bbbbbb !important;
+}
 .primary-btn {
   width: fit-content;
   height: auto;
