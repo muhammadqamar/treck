@@ -1,0 +1,295 @@
+.welcome-section {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 64px;
+}
+@media (max-width: 1100px) {
+  .welcome-section {
+    padding: 24px;
+  }
+}
+.welcome-content {
+  padding: 24px 0;
+}
+.welcome-content .welcome-heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #1a1a1a;
+}
+
+.welcome-content .welcome-text {
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
+}
+.school-section {
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 992px) {
+  .school-section {
+    flex-direction: column;
+  }
+}
+.school-cards-section {
+  max-width: 976px;
+}
+.cards-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.cards-box .card {
+  width: 182px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+}
+@media (max-width: 660px) {
+  .cards-box .card {
+    width: 100%;
+  }
+}
+.cards-box .card img {
+  width: 24px;
+  height: auto;
+}
+.cards-box .card .numbers-heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #1a1a1a;
+}
+.cards-box .card .name-text {
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+.recent-treks-section {
+  max-width: 320px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 992px) {
+  .recent-treks-section {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 550px) {
+  .recent-treks-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body div {
+  line-height: 10px;
+}
+.recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+}
+.recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body img {
+  width: 96px;
+  height: 56px;
+  border-radius: 8px;
+}
+.assignment-section {
+  margin-top: 16px;
+}
+@media (max-width: 992px) {
+  .recent-treks-section {
+    margin-top: 0;
+  }
+}
+.section-div-header .to-do {
+  margin: 16px 0 4px;
+}
+.section-div-header .progress-heading {
+  margin: 24px 0 4px;
+}
+
+/* Table Styling */
+.table-section {
+  border-radius: 0;
+  margin: 16px 0 48px;
+}
+@media (max-width: 430px) {
+  .table-section {
+    margin: 16px 0 16px;
+  }
+}
+.table-section .add-teacher-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+@media (max-width: 520px) {
+  .table-section .add-teacher-box {
+    gap: 16px;
+  }
+}
+.table-section .search-filter-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.table-section .search-filter-box input {
+  font-family: "Droid Sans";
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+  border-bottom: 1.5px solid #757575;
+  color: #757575;
+}
+.table-section .search-filter-box input:focus-visible {
+  outline: none;
+}
+.add-teacher-box .filter-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.add-teacher-box .filter-box .filter-heading {
+  margin: 0;
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
+}
+.add-teacher-box .add-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.add-teacher-box .add-box .add-heading {
+  margin: 0;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0b5d7a;
+}
+@media (max-width: 630px) {
+  .students-table {
+    overflow-x: scroll;
+  }
+}
+.students-table .table {
+  margin: 16px 0;
+  padding: 0 16px;
+}
+.students-table .table thead tr th {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-style: none !important;
+}
+.students-table .table th .th1,
+.th2 {
+  display: flex;
+  max-width: 228px;
+  justify-content: space-between;
+}
+@media (max-width: 630px) {
+  .students-table .table th .th1,
+  .th2,
+  .th3,
+  .th4,
+  .th5 {
+    gap: 6px;
+  }
+}
+.students-table .table th .th3,
+.th4 {
+  max-width: 120px;
+}
+.students-table .table tbody tr .user-box {
+  padding: 12px 0 12px 16px;
+}
+.students-table .table tbody .second-row {
+  background: rgba(31, 165, 212, 0.08);
+}
+.students-table .table tbody .second-row td {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0b5d7a;
+}
+.students-table .table tbody tr td {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #757575;
+}
+.students-table .table tbody .grade span {
+  width: 36px;
+  height: 28px;
+  background: #eaedf1;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+.students-table .table tbody .grade .span {
+  background: rgba(31, 165, 212, 0.08);
+}
+.students-table .table .table-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.students-table .table .table-user img {
+  width: 32px;
+  height: 32px;
+}
+.students-table .table .table-user h5 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #757575;
+}

@@ -1,278 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="./style/common.css" rel="stylesheet" />
-    <link href="./style/treksstyle.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./style/calendar.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Menu -->
-    <nav class="navbar navbar-expand-lg treks-nav">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendar</title>
+  <link href="./style/common.css" rel="stylesheet" />
+  <link href="./style/header-section.css" rel="stylesheet" />
+  <link href="./style/treksstyle.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/calendar.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg treks-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <div class="header-logo-search">
+          <!-- logo -->
+          <div class="header-logo">
+            <img src="./assets/img/header_logo.svg" alt="svg" />
+          </div>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav me-auto mb-2 mb-lg-0">
           <div class="header-logo-search">
-            <!-- logo -->
-            <div class="header-logo">
-              <img src="./assets/img/header_logo.svg" alt="svg" />
+            <!-- searching input -->
+            <div class="header-search">
+              <img src="./assets/img/header_search.svg" alt="svg" />
+              <input placeholder="Search" />
             </div>
           </div>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="navbar-nav me-auto mb-2 mb-lg-0">
-            <div class="header-logo-search">
-              <!-- searching input -->
-              <div class="header-search">
-                <img src="./assets/img/header_search.svg" alt="svg" />
-                <input placeholder="Search" />
-              </div>
+        </div>
+        <div class="d-flex" role="search">
+          <div class="header-notification-user">
+            <!-- notification -->
+            <div class="header-notification">
+              <img src="./assets/img/header_bell-notification.svg" alt="svg" />
             </div>
-          </div>
-          <div class="d-flex" role="search">
-            <div class="header-notification-user">
-              <!-- notification -->
-              <div class="header-notification">
-                <img src="./assets/img/header_bell-notification.svg" alt="svg" />
+            <!-- user detail & Image  -->
+            <div class="header-user">
+              <!-- User Avatar -->
+              <div class="user-avatar">
+                <img src="./assets/img/header_avatar.svg" alt="svg" />
               </div>
-              <!-- user detail & Image  -->
-              <div class="header-user">
-                <!-- User Avatar -->
-                <div class="user-avatar">
-                  <img src="./assets/img/header_avatar.svg" alt="svg" />
-                </div>
-                <!-- User short detail -->
-                <div class="user-detail">
-                  <span class="user-detail-name">Kristin Watson</span>
-                  <span>Science teacher</span>
-                </div>
-                <!-- Arrow for open menu -->
-                <div class="user-options">
-                  <img src="./assets/img/header_arrow open.svg" alt="svg" />
-                </div>
+              <!-- User short detail -->
+              <div class="user-detail">
+                <span class="user-detail-name">Kristin Watson</span>
+                <span>Science teacher</span>
+              </div>
+              <!-- Arrow for open menu -->
+              <div class="user-options">
+                <img src="./assets/img/header_arrow open.svg" alt="svg" />
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </nav>
+
+  <!-- Basic Container -->
+  <section class="main-container b-space">
+    <!-- Nav Section -->
+    <nav class="nav-section">
+      <ul>
+        <li>
+          <img src="./assets/img/nav_dashboard-dots_gray.svg" />
+          <a href="/">Dashboard</a>
+        </li>
+        <li>
+          <img src="./assets/img/nav_Treks.svg" />
+          <a href="/">TREKs</a>
+        </li>
+        <li class="nav-section-selected">
+          <img src="./assets/img/calendar-selected.svg" />
+          <a href="/">Calendar</a>
+        </li>
+        <li>
+          <img src="./assets/img/nav_students.svg" />
+          <a href="/">Students</a>
+        </li>
+        <li>
+          <img src="./assets/img/nav_reports.svg" />
+          <a href="/">Reports</a>
+        </li>
+      </ul>
     </nav>
+  </section>
 
-    <!-- Basic Container -->
-    <section class="main-container b-space">
-      <!-- Nav Section -->
-      <nav class="nav-section">
-        <ul>
-          <li>
-            <img src="./assets/img/nav_dashboard-dots_gray.svg" />
-            <a href="/">Dashboard</a>
-          </li>
-          <li>
-            <img src="./assets/img/nav_Treks.svg" />
-            <a href="/">TREKs</a>
-          </li>
-          <li class="nav-section-selected">
-            <img src="./assets/img/calendar-selected.svg" />
-            <a href="/">Calendar</a>
-          </li>
-          <li>
-            <img src="./assets/img/nav_students.svg" />
-            <a href="/">Students</a>
-          </li>
-          <li>
-            <img src="./assets/img/nav_reports.svg" />
-            <a href="/">Reports</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-
-    <section class="calendar-container">
-      <div class="d-flex align-content-center justify-content-between mb-3">
-        <h1 class="calendar-heading m-0">Calendar</h1>
-        <button
-          type="button"
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-          class="primary-btn"
-        >
-          Open Modal
-        </button>
-        <div
-          class="modal fade students-modal"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="modal-header-title">
-                  <img src="./assets/img/black-group.svg" alt="rocket" />
-                  <h2 class="modal-title" id="exampleModalLabel">Student Progress</h2>
-                </div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
+  <section class="calendar-container">
+    <div class="d-flex align-content-center justify-content-between mb-3">
+      <h1 class="calendar-heading m-0">Calendar</h1>
+      <button type="button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="primary-btn">
+        Open Modal
+      </button>
+      <div class="modal fade students-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-header-title">
+                <img src="./assets/img/black-group.svg" alt="rocket" />
+                <h2 class="modal-title" id="exampleModalLabel">Student Progress</h2>
               </div>
-              <div class="modal-body">
-                <div class="students-breadcrumb">
-                  <div class="interdependence-user">
-                    <img src="./assets/img/tr_main.png" alt="user" class="inter-user-img" />
-                    <h3 class="inter-user-name">5.12A Interdependence</h3>
-                  </div>
-                  <img
-                    src="./assets/img/bc_arrow_right.svg"
-                    alt="user"
-                    class="students-breadcrumb-arrow"
-                  />
-                  <div class="interdependence-tab">
-                    <div class="inter-tab-polygon">
-                      <h4>R</h4>
-                    </div>
-                    <h3 class="inter-tab-polygon-name">Recall</h3>
-                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="students-breadcrumb">
+                <div class="interdependence-user">
+                  <img src="./assets/img/tr_main.png" alt="user" class="inter-user-img" />
+                  <h3 class="inter-user-name">5.12A Interdependence</h3>
                 </div>
-                <div class="students-table">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>Student</th>
-                        <th>Status</th>
-                        <th>Progress</th>
-                        <th>Score (%)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="table-user">
-                            <img src="./assets/img/header_avatar.svg" alt="user" />
-                            <div class="user-about">
-                              <h5>Jane Cooper</h5>
-                              <p>5th grade</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td><div class="table-status">Completed</div></td>
-                        <td>10 /10</td>
-                        <td>80</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="table-user">
-                            <img src="./assets/img/header_avatar.svg" alt="user" />
-                            <div class="user-about">
-                              <h5>Jane Cooper</h5>
-                              <p>5th grade</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td><div class="table-status">Completed</div></td>
-                        <td>10 /10</td>
-                        <td>80</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="table-user">
-                            <img src="./assets/img/header_avatar.svg" alt="user" />
-                            <div class="user-about">
-                              <h5>Jane Cooper</h5>
-                              <p>5th grade</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td><div class="table-status">Completed</div></td>
-                        <td>10 /10</td>
-                        <td>80</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <img src="./assets/img/bc_arrow_right.svg" alt="user" class="students-breadcrumb-arrow" />
+                <div class="interdependence-tab">
+                  <div class="inter-tab-polygon">
+                    <h4>R</h4>
+                  </div>
+                  <h3 class="inter-tab-polygon-name">Recall</h3>
                 </div>
+              </div>
+              <div class="students-table">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Student</th>
+                      <th>Status</th>
+                      <th>Progress</th>
+                      <th>Score (%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="table-user">
+                          <img src="./assets/img/header_avatar.svg" alt="user" />
+                          <div class="user-about">
+                            <h5>Jane Cooper</h5>
+                            <p>5th grade</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="table-status">Completed</div>
+                      </td>
+                      <td>10 /10</td>
+                      <td>80</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="table-user">
+                          <img src="./assets/img/header_avatar.svg" alt="user" />
+                          <div class="user-about">
+                            <h5>Jane Cooper</h5>
+                            <p>5th grade</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="table-status">Completed</div>
+                      </td>
+                      <td>10 /10</td>
+                      <td>80</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="table-user">
+                          <img src="./assets/img/header_avatar.svg" alt="user" />
+                          <div class="user-about">
+                            <h5>Jane Cooper</h5>
+                            <p>5th grade</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="table-status">Completed</div>
+                      </td>
+                      <td>10 /10</td>
+                      <td>80</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="calendar-flex-box">
-        <div class="calendar-main"></div>
-        <div class="calendar-right-box">
-          <div class="small-calendar"></div>
-          <div class="rpa-segments-box">
-            <h5 class="rpa-heading">RPA Segments</h5>
-            <div class="rpa-segments-form">
-              <div class="form-check">
-                <input class="form-check-input input-all" type="checkbox" value="" id="all" />
-                <label class="form-check-label" for="all"> All </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input input-recall" type="checkbox" value="" id="Recall" />
-                <label class="form-check-label" for="Recall"> Recall </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input input-practiceA"
-                  type="checkbox"
-                  value=""
-                  id="practiceA"
-                />
-                <label class="form-check-label" for="practiceA"> Practice A</label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input input-practiceB"
-                  type="checkbox"
-                  value=""
-                  id="practiceB"
-                />
-                <label class="form-check-label" for="practiceB"> Practice B </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input input-apply" type="checkbox" value="" id="apply" />
-                <label class="form-check-label" for="apply"> Apply </label>
-              </div>
+    <div class="calendar-flex-box">
+      <div class="calendar-main"></div>
+      <div class="calendar-right-box">
+        <div class="small-calendar"></div>
+        <div class="rpa-segments-box">
+          <h5 class="rpa-heading">RPA Segments</h5>
+          <div class="rpa-segments-form">
+            <div class="form-check">
+              <input class="form-check-input input-all" type="checkbox" value="" id="all" />
+              <label class="form-check-label" for="all"> All </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input input-recall" type="checkbox" value="" id="Recall" />
+              <label class="form-check-label" for="Recall"> Recall </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input input-practiceA" type="checkbox" value="" id="practiceA" />
+              <label class="form-check-label" for="practiceA"> Practice A</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input input-practiceB" type="checkbox" value="" id="practiceB" />
+              <label class="form-check-label" for="practiceB"> Practice B </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input input-apply" type="checkbox" value="" id="apply" />
+              <label class="form-check-label" for="apply"> Apply </label>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/Animated-Circular-Progress-Bar-with-jQuery-Canvas-Circle-Progress/dist/circle-progress.js"></script>
-    <script src="./js/custom.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script src="./js/Animated-Circular-Progress-Bar-with-jQuery-Canvas-Circle-Progress/dist/circle-progress.js"></script>
+  <script src="./js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

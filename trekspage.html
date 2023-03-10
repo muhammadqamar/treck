@@ -1,361 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="./style/common.css" rel="stylesheet" />
-    <link href="./style/treksstyle.css" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Menu -->
-    <nav class="navbar navbar-expand-lg treks-nav">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treks</title>
+  <link href="./style/common.css" rel="stylesheet" />
+  <link href="./style/header-section.css" rel="stylesheet" />
+  <link href="./style/treksstyle.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg treks-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <div class="header-logo-search">
+          <!-- logo -->
+          <div class="header-logo">
+            <img src="./assets/img/header_logo.svg" alt="svg" />
+          </div>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav me-auto mb-2 mb-lg-0">
           <div class="header-logo-search">
-            <!-- logo -->
-            <div class="header-logo">
-              <img src="./assets/img/header_logo.svg" alt="svg" />
+            <!-- searching input -->
+            <div class="header-search">
+              <img src="./assets/img/header_search.svg" alt="svg" />
+              <input placeholder="Search" />
             </div>
           </div>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="navbar-nav me-auto mb-2 mb-lg-0">
-            <div class="header-logo-search">
-              <!-- searching input -->
-              <div class="header-search">
-                <img src="./assets/img/header_search.svg" alt="svg" />
-                <input placeholder="Search" />
-              </div>
+        </div>
+        <div class="d-flex" role="search">
+          <div class="header-notification-user">
+            <!-- notification -->
+            <div class="header-notification">
+              <img src="./assets/img/header_bell-notification.svg" alt="svg" />
             </div>
-          </div>
-          <div class="d-flex" role="search">
-            <div class="header-notification-user">
-              <!-- notification -->
-              <div class="header-notification">
-                <img src="./assets/img/header_bell-notification.svg" alt="svg" />
+            <!-- user detail & Image  -->
+            <div class="header-user">
+              <!-- User Avatar -->
+              <div class="user-avatar">
+                <img src="./assets/img/header_avatar.svg" alt="svg" />
               </div>
-              <!-- user detail & Image  -->
-              <div class="header-user">
-                <!-- User Avatar -->
-                <div class="user-avatar">
-                  <img src="./assets/img/header_avatar.svg" alt="svg" />
-                </div>
-                <!-- User short detail -->
-                <div class="user-detail">
-                  <span class="user-detail-name">Kristin Watson</span>
-                  <span>Science teacher</span>
-                </div>
-                <!-- Arrow for open menu -->
-                <div class="user-options">
-                  <img src="./assets/img/header_arrow open.svg" alt="svg" />
-                </div>
+              <!-- User short detail -->
+              <div class="user-detail">
+                <span class="user-detail-name">Kristin Watson</span>
+                <span>Science teacher</span>
+              </div>
+              <!-- Arrow for open menu -->
+              <div class="user-options">
+                <img src="./assets/img/header_arrow open.svg" alt="svg" />
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </nav>
+
+  <!-- Basic Container -->
+  <section class="main-container">
+    <!-- Nav Section -->
+    <nav class="nav-section">
+      <ul>
+        <li>
+          <img src="./assets/img/nav_dashboard-dots_gray.svg" />
+          <a href="/">Dashboard</a>
+        </li>
+        <li class="nav-section-selected">
+          <img src="./assets/img/nav_treks_selected.svg" />
+          <a href="/">TREKs</a>
+        </li>
+        <li>
+          <img src="./assets/img/calendar.svg" />
+          <a href="/">Calendar</a>
+        </li>
+        <li>
+          <img src="./assets/img/nav_students.svg" />
+          <a href="/">Students</a>
+        </li>
+        <li>
+          <img src="./assets/img/nav_reports.svg" />
+          <a href="/">Reports</a>
+        </li>
+      </ul>
     </nav>
 
-    <!-- Basic Container -->
-    <section class="main-container">
-      <!-- Nav Section -->
-      <nav class="nav-section">
-        <ul>
-          <li>
-            <img src="./assets/img/nav_dashboard-dots_gray.svg" />
-            <a href="/">Dashboard</a>
-          </li>
-          <li class="nav-section-selected">
-            <img src="./assets/img/nav_treks_selected.svg" />
-            <a href="/">TREKs</a>
-          </li>
-          <li>
-            <img src="./assets/img/calendar.svg" />
-            <a href="/">Calendar</a>
-          </li>
-          <li>
-            <img src="./assets/img/nav_students.svg" />
-            <a href="/">Students</a>
-          </li>
-          <li>
-            <img src="./assets/img/nav_reports.svg" />
-            <a href="/">Reports</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- My TREKs breadcrumbs -->
-      <section class="my-trk-bc-section">
-        <div class="my-trk-bc-section-div">
-          <!-- breadcrumbs -->
-          <img class="bc-img-1" src="./assets/img/bc_img.svg" />
-          <p>My TREKs</p>
-          <img class="bc-img-2" src="./assets/img/bc_arrow_right.svg" />
-          <p>5.12A Interdependence</p>
+    <!-- My TREKs breadcrumbs -->
+    <section class="my-trk-bc-section">
+      <div class="my-trk-bc-section-div">
+        <!-- breadcrumbs -->
+        <img class="bc-img-1" src="./assets/img/bc_img.svg" />
+        <p>My TREKs</p>
+        <img class="bc-img-2" src="./assets/img/bc_arrow_right.svg" />
+        <p>5.12A Interdependence</p>
+      </div>
+    </section>
+    <!-- My TREKs Detail -->
+    <section class="my-trk-detail-section">
+      <div class="my-trk-detail-section-div">
+        <!-- TREKs image  -->
+        <div class="my-trk-detail-img">
+          <img src="./assets/img/tr_main.png" />
         </div>
-      </section>
-      <!-- My TREKs Detail -->
-      <section class="my-trk-detail-section">
-        <div class="my-trk-detail-section-div">
-          <!-- TREKs image  -->
-          <div class="my-trk-detail-img">
-            <img src="./assets/img/tr_main.png" />
+        <!-- TREKs detail -->
+        <div class="my-trk-detail-prep">
+          <!-- Title -->
+          <div class="detail-prep-title">
+            <h2>5.12A Interdependence</h2>
           </div>
-          <!-- TREKs detail -->
-          <div class="my-trk-detail-prep">
-            <!-- Title -->
-            <div class="detail-prep-title">
-              <h2>5.12A Interdependence</h2>
+          <!-- Description -->
+          <div class="detail-prep-desc">
+            <p>
+              Student Expectation: Observe and describe how a variety of organisms survive by
+              interacting with biotic and abiotic factors in a healthy ecosystem.<br />
+              Readiness Standard | Organisms & Environments Strand
+            </p>
+          </div>
+          <!-- Tags -->
+          <div class="detail-prep-tags">
+            <!-- overview tag -->
+            <div class="tags-body overview-poly-body">
+              <div class="tags-body-polygon">
+                <span>O</span>
+              </div>
+              <div class="tags-body-detail">
+                <span>Overview</span>
+              </div>
             </div>
-            <!-- Description -->
-            <div class="detail-prep-desc">
-              <p>
-                Student Expectation: Observe and describe how a variety of organisms survive by
-                interacting with biotic and abiotic factors in a healthy ecosystem.<br />
-                Readiness Standard | Organisms & Environments Strand
-              </p>
+            <!-- Recall -->
+            <div class="tags-body recall-poly-body">
+              <div class="tags-body-polygon">
+                <span>R</span>
+              </div>
+              <div class="tags-body-detail">
+                <span>Recall</span>
+              </div>
             </div>
-            <!-- Tags -->
-            <div class="detail-prep-tags">
-              <!-- overview tag -->
-              <div class="tags-body overview-poly-body">
-                <div class="tags-body-polygon">
-                  <span>O</span>
-                </div>
-                <div class="tags-body-detail">
-                  <span>Overview</span>
-                </div>
+            <!-- Practice A -->
+            <div class="tags-body pa-poly-body">
+              <div class="tags-body-polygon">
+                <span>P</span>
               </div>
-              <!-- Recall -->
-              <div class="tags-body recall-poly-body">
-                <div class="tags-body-polygon">
-                  <span>R</span>
-                </div>
-                <div class="tags-body-detail">
-                  <span>Recall</span>
-                </div>
+              <div class="tags-body-detail">
+                <span>Practice A</span>
               </div>
-              <!-- Practice A -->
-              <div class="tags-body pa-poly-body">
-                <div class="tags-body-polygon">
-                  <span>P</span>
-                </div>
-                <div class="tags-body-detail">
-                  <span>Practice A</span>
-                </div>
+            </div>
+            <!-- Practice B -->
+            <div class="tags-body pb-poly-body">
+              <div class="tags-body-polygon">
+                <span>P</span>
               </div>
-              <!-- Practice B -->
-              <div class="tags-body pb-poly-body">
-                <div class="tags-body-polygon">
-                  <span>P</span>
-                </div>
-                <div class="tags-body-detail">
-                  <span>Practice B</span>
-                </div>
+              <div class="tags-body-detail">
+                <span>Practice B</span>
               </div>
-              <!-- Apply -->
-              <div class="tags-body apply-poly-body">
-                <div class="tags-body-polygon">
-                  <span>A</span>
-                </div>
-                <div class="tags-body-detail">
-                  <span>Apply</span>
-                </div>
+            </div>
+            <!-- Apply -->
+            <div class="tags-body apply-poly-body">
+              <div class="tags-body-polygon">
+                <span>A</span>
+              </div>
+              <div class="tags-body-detail">
+                <span>Apply</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- TREKs assigned to -->
-      <section class="trk-assign-section">
-        <div class="trk-assign-section-div">
-          <p>TREKs assigned to</p>
-          <button
-            class="students"
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            9 Students
-          </button>
-        </div>
-        <div class="">
-          <button
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#calendarModal"
-            class="primary-btn lx-space"
-          >
-            Assign
-          </button>
-          <div
-            class="modal fade assignment-modal"
-            id="calendarModal"
-            tabindex="-1"
-            aria-labelledby="calendarModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <!-- left side -->
-                  <div class="assignment-modal-left">
-                    <div class="assignment-left-header">
-                      <img src="./assets/img/calendar.svg" alt="calendar" />
-                      <p>Calendar</p>
+    <!-- TREKs assigned to -->
+    <section class="trk-assign-section">
+      <div class="trk-assign-section-div">
+        <p>TREKs assigned to</p>
+        <button class="students" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          9 Students
+        </button>
+      </div>
+      <div class="">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#calendarModal" class="primary-btn lx-space">
+          Assign
+        </button>
+        <div class="modal fade assignment-modal" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <!-- left side -->
+                <div class="assignment-modal-left">
+                  <div class="assignment-left-header">
+                    <img src="./assets/img/calendar.svg" alt="calendar" />
+                    <p>Calendar</p>
+                  </div>
+                  <div class="assignment-left-detail">
+                    <h1>New assignment</h1>
+                    <p>You are creating a new assignment for the following content:</p>
+                  </div>
+                  <div class="assignment-left-label">
+                    <h6 class="taek-label">TREK</h6>
+                    <div class="interdependence-user">
+                      <img src="./assets/img/tr_main.png" alt="user" class="inter-user-img" />
+                      <h3 class="inter-user-name">5.12A Interdependence</h3>
                     </div>
-                    <div class="assignment-left-detail">
-                      <h1>New assignment</h1>
-                      <p>You are creating a new assignment for the following content:</p>
-                    </div>
-                    <div class="assignment-left-label">
-                      <h6 class="taek-label">TREK</h6>
-                      <div class="interdependence-user">
-                        <img src="./assets/img/tr_main.png" alt="user" class="inter-user-img" />
-                        <h3 class="inter-user-name">5.12A Interdependence</h3>
+                    <h6 class="taek-label">RPA Segment</h6>
+                    <div class="recall-user">
+                      <div class="inter-tab-polygon">
+                        <h4>R</h4>
                       </div>
-                      <h6 class="taek-label">RPA Segment</h6>
-                      <div class="recall-user">
-                        <div class="inter-tab-polygon">
-                          <h4>R</h4>
-                        </div>
-                        <h3 class="inter-user-name">Recall</h3>
-                      </div>
+                      <h3 class="inter-user-name">Recall</h3>
                     </div>
-                    <div class="assignment-search">
-                      <h6 class="taek-label">Student name</h6>
-                      <input type="text" class="ass-search-input" placeholder="Type student name" />
+                  </div>
+                  <div class="assignment-search">
+                    <h6 class="taek-label">Student name</h6>
+                    <input type="text" class="ass-search-input" placeholder="Type student name" />
 
-                      <div class="assignment-search-result">
-                        <div class="search-user">
-                          <img src="./assets/img/rec_tre_img2.svg" alt="user" />
-                          <div class="user-name-detail">
-                            <h5>Jane Cooper</h5>
-                            <p>5th grade</p>
-                          </div>
+                    <div class="assignment-search-result">
+                      <div class="search-user">
+                        <img src="./assets/img/rec_tre_img2.svg" alt="user" />
+                        <div class="user-name-detail">
+                          <h5>Jane Cooper</h5>
+                          <p>5th grade</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- right side -->
-                  <div class="assignment-modal-right">
-                    <div class="assignment-right-header">
-                      <div class="modal-header-title">
-                        <h2 class="modal-title" id="calendarModalLabel">
-                          Please select a schedule to create this assignment
-                        </h2>
-                      </div>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="assignment-calendar"></div>
-                    <div class="assignment-right-btn">
-                      <button class="assignment-right-cancel">Cancel</button>
-                      <button class="primary-btn bg-gray-3-color">Create assignment</button>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- students modal -->
-      <div
-        class="modal fade students-modal"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <div class="modal-header-title">
-                <img src="./assets/img/black-group.svg" alt="rocket" />
-                <h2 class="modal-title" id="exampleModalLabel">Student</h2>
-              </div>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="filters-students">
-                <div class="filter-header">
-                  <div class="filter">
-                    <img src="./assets/img/filter-alt.svg" alt="filter" />
-                    <p>Filters</p>
-                  </div>
-                  <div class="filter-sort-by">
-                    <img src="./assets/img/filter-sort-logo.svg" alt="sort" />
-                    <p>Sort by A-Z</p>
-                  </div>
-                </div>
-                <div class="student">
-                  <div class="user-details">
-                    <img src="./assets/img/header_avatar.svg" alt="user" class="user" />
-                    <div class="detail">
-                      <h6>Wade Warren</h6>
-                      <p>3rd grade</p>
+                <!-- right side -->
+                <div class="assignment-modal-right">
+                  <div class="assignment-right-header">
+                    <div class="modal-header-title">
+                      <h2 class="modal-title" id="calendarModalLabel">
+                        Please select a schedule to create this assignment
+                      </h2>
                     </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="report">
-                    <img src="./assets/img/trash.svg" alt="report" />
-                    <a href="">See Report</a>
-                  </div>
-                </div>
-                <div class="student">
-                  <div class="user-details">
-                    <img src="./assets/img/header_avatar.svg" alt="user" class="user" />
-                    <div class="detail">
-                      <h6>Wade Warren</h6>
-                      <p>3rd grade</p>
-                    </div>
-                  </div>
-                  <div class="report">
-                    <img src="./assets/img/trash.svg" alt="report" />
-                    <a href="">See Report</a>
-                  </div>
-                </div>
-                <div class="student">
-                  <div class="user-details">
-                    <img src="./assets/img/header_avatar.svg" alt="user" class="user" />
-                    <div class="detail">
-                      <h6>Wade Warren</h6>
-                      <p>3rd grade</p>
-                    </div>
-                  </div>
-                  <div class="report">
-                    <img src="./assets/img/trash.svg" alt="report" />
-                    <a href="">See Report</a>
+                  <div class="assignment-calendar"></div>
+                  <div class="assignment-right-btn">
+                    <button class="assignment-right-cancel">Cancel</button>
+                    <button class="primary-btn bg-gray-3-color">Create assignment</button>
                   </div>
                 </div>
               </div>
@@ -363,172 +256,237 @@
           </div>
         </div>
       </div>
-      <!--  -->
-      <section class="trk-assign-section">
-        <div class="trk-assign-section-div">
-          <h2 class="">Teacher Instructions</h2>
+    </section>
+    <!-- students modal -->
+    <div class="modal fade students-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-header-title">
+              <img src="./assets/img/black-group.svg" alt="rocket" />
+              <h2 class="modal-title" id="exampleModalLabel">Student</h2>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="filters-students">
+              <div class="filter-header">
+                <div class="filter">
+                  <img src="./assets/img/filter-alt.svg" alt="filter" />
+                  <p>Filters</p>
+                </div>
+                <div class="filter-sort-by">
+                  <img src="./assets/img/filter-sort-logo.svg" alt="sort" />
+                  <p>Sort by A-Z</p>
+                </div>
+              </div>
+              <div class="student">
+                <div class="user-details">
+                  <img src="./assets/img/header_avatar.svg" alt="user" class="user" />
+                  <div class="detail">
+                    <h6>Wade Warren</h6>
+                    <p>3rd grade</p>
+                  </div>
+                </div>
+                <div class="report">
+                  <img src="./assets/img/trash.svg" alt="report" />
+                  <a href="">See Report</a>
+                </div>
+              </div>
+              <div class="student">
+                <div class="user-details">
+                  <img src="./assets/img/header_avatar.svg" alt="user" class="user" />
+                  <div class="detail">
+                    <h6>Wade Warren</h6>
+                    <p>3rd grade</p>
+                  </div>
+                </div>
+                <div class="report">
+                  <img src="./assets/img/trash.svg" alt="report" />
+                  <a href="">See Report</a>
+                </div>
+              </div>
+              <div class="student">
+                <div class="user-details">
+                  <img src="./assets/img/header_avatar.svg" alt="user" class="user" />
+                  <div class="detail">
+                    <h6>Wade Warren</h6>
+                    <p>3rd grade</p>
+                  </div>
+                </div>
+                <div class="report">
+                  <img src="./assets/img/trash.svg" alt="report" />
+                  <a href="">See Report</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <button class="secondary-btn red-rocket">
-            Digital Student Journal <img src="./assets/img/red-rocket.svg" alt="rocket" />
-          </button>
-        </div>
-      </section>
+      </div>
+    </div>
+    <!--  -->
+    <section class="trk-assign-section">
+      <div class="trk-assign-section-div">
+        <h2 class="">Teacher Instructions</h2>
+      </div>
+      <div>
+        <button class="secondary-btn red-rocket">
+          Digital Student Journal <img src="./assets/img/red-rocket.svg" alt="rocket" />
+        </button>
+      </div>
+    </section>
 
-      <!-- Central Concepts  -->
-      <section class="central-cncpt-section">
-        <div class="central-cncpt-section-div">
-          <h3 class="text-style-heading-s2-cm">Central Concepts</h3>
-          <div class="central-cncpt-list-div">
-            <ul>
+    <!-- Central Concepts  -->
+    <section class="central-cncpt-section">
+      <div class="central-cncpt-section-div">
+        <h3 class="text-style-heading-s2-cm">Central Concepts</h3>
+        <div class="central-cncpt-list-div">
+          <ul>
+            <li class="text-style-prep-cm">
+              All of life depends on basic needs including food, shelter, air, and space for
+              habitat.
+            </li>
+            <li class="text-style-prep-cm">
+              All living organisms interact with other living and nonliving parts of their
+              ecosystems.
+            </li>
+            <li class="text-style-prep-cm">
+              Living organisms rely on this integration of living and nonliving components to grow
+              and reproduce.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--  Central Concepts  4 topic detail -->
+    <section class="central-topic-section">
+      <div class="central-topic-section-div">
+        <!-- Recall -->
+        <div class="central-topic-each-list">
+          <div class="list-heading">
+            <h4 class="text-style-heading-s2-cm recall-cc-heading">Recall</h4>
+          </div>
+
+          <div class="list-detail">
+            <h5>Review: “What Do Living Things Need?”</h5>
+            <p class="text-style-prep-cm">
+              Students recall prior knowledge of the basic needs of all organisms in their
+              environment with transparent thinking.
+            </p>
+          </div>
+        </div>
+        <!-- Practice A -->
+        <div class="central-topic-each-list">
+          <div class="list-heading">
+            <h4 class="text-style-heading-s2-cm pa-cc-heading">Practice A</h4>
+          </div>
+          <div class="list-detail">
+            <h5>Investigation: Rain & Shine</h5>
+            <p class="text-style-prep-cm">
+              Students collect and analyze data in a simulated comparative investigation to answer
+              the research question, “How does sunlight and water affect plant growth?” An
+              optional STEAM extension on creating non-linguistic visualizations of data.
+            </p>
+          </div>
+        </div>
+        <!-- Practice B -->
+        <div class="central-topic-each-list">
+          <div class="list-heading">
+            <h4 class="text-style-heading-s2-cm pb-cc-heading">Practice B</h4>
+          </div>
+          <div class="list-detail">
+            <h5>In the Field: Billie the Birdwatcher</h5>
+            <p class="text-style-prep-cm">
+              Students actively read and reflect as field scientists, support a second hand field
+              investigation with Billie the Birdwatcher, and identify appropriate habitats for
+              three North American bird species.
+            </p>
+          </div>
+        </div>
+        <!-- Apply -->
+        <div class="central-topic-each-list">
+          <div class="list-heading">
+            <h4 class="text-style-heading-s2-cm apply-cc-heading">Apply</h4>
+          </div>
+          <div class="list-detail">
+            <h5>Mission: The Great Turtle Rescue</h5>
+            <p class="text-style-prep-cm">
+              Students embark on a task-based problem-solving real-world scenario with a mission
+              for a wildlife release in a nearby wildlife refuge using habitat maps adapted from
+              Brazoria National Wildlife Refuge of coastal eastern Texas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Integrated Standards Alignment  -->
+    <section class="intg-stand-section">
+      <div class="intg-stand-section-div">
+        <!-- heading -->
+        <div class="intg-stand-heading">
+          <h3 class="text-style-heading-s2-cm">Integrated Standards Alignment</h3>
+        </div>
+
+        <!-- Looking Behind: -->
+        <div class="intg-stand-detail-list">
+          <div class="intg-stand-list">
+            <h4>Looking Behind:</h4>
+            <p class="text-style-prep-cm">Grades 3 and 4</p>
+          </div>
+          <!-- list detail -->
+          <div class="intg-stand-detail">
+            <ul class="main-detail">
+              <li class="text-style-prep-cm">Science</li>
+            </ul>
+            <ul class="sub-detal">
               <li class="text-style-prep-cm">
-                All of life depends on basic needs including food, shelter, air, and space for
-                habitat.
+                3.9A Investigate that most producers need sunlight, water, and carbon dioxide to
+                make their own food, while consumers are dependent on other organisms for food.
               </li>
               <li class="text-style-prep-cm">
-                All living organisms interact with other living and nonliving parts of their
-                ecosystems.
-              </li>
-              <li class="text-style-prep-cm">
-                Living organisms rely on this integration of living and nonliving components to grow
-                and reproduce.
+                3.9A Investigate that most producers need sunlight, water, and carbon dioxide to
+                make their own food, while consumers are dependent on other organisms for food.
               </li>
             </ul>
           </div>
         </div>
-      </section>
-
-      <!--  Central Concepts  4 topic detail -->
-      <section class="central-topic-section">
-        <div class="central-topic-section-div">
-          <!-- Recall -->
-          <div class="central-topic-each-list">
-            <div class="list-heading">
-              <h4 class="text-style-heading-s2-cm recall-cc-heading">Recall</h4>
-            </div>
-
-            <div class="list-detail">
-              <h5>Review: “What Do Living Things Need?”</h5>
-              <p class="text-style-prep-cm">
-                Students recall prior knowledge of the basic needs of all organisms in their
-                environment with transparent thinking.
-              </p>
-            </div>
+        <!-- Looking Ahead: -->
+        <div class="intg-stand-detail-list">
+          <div class="intg-stand-list">
+            <h4>Looking Ahead::</h4>
+            <p class="text-style-prep-cm">Grades 3 and 4</p>
           </div>
-          <!-- Practice A -->
-          <div class="central-topic-each-list">
-            <div class="list-heading">
-              <h4 class="text-style-heading-s2-cm pa-cc-heading">Practice A</h4>
-            </div>
-            <div class="list-detail">
-              <h5>Investigation: Rain & Shine</h5>
-              <p class="text-style-prep-cm">
-                Students collect and analyze data in a simulated comparative investigation to answer
-                the research question, “How does sunlight and water affect plant growth?” An
-                optional STEAM extension on creating non-linguistic visualizations of data.
-              </p>
-            </div>
-          </div>
-          <!-- Practice B -->
-          <div class="central-topic-each-list">
-            <div class="list-heading">
-              <h4 class="text-style-heading-s2-cm pb-cc-heading">Practice B</h4>
-            </div>
-            <div class="list-detail">
-              <h5>In the Field: Billie the Birdwatcher</h5>
-              <p class="text-style-prep-cm">
-                Students actively read and reflect as field scientists, support a second hand field
-                investigation with Billie the Birdwatcher, and identify appropriate habitats for
-                three North American bird species.
-              </p>
-            </div>
-          </div>
-          <!-- Apply -->
-          <div class="central-topic-each-list">
-            <div class="list-heading">
-              <h4 class="text-style-heading-s2-cm apply-cc-heading">Apply</h4>
-            </div>
-            <div class="list-detail">
-              <h5>Mission: The Great Turtle Rescue</h5>
-              <p class="text-style-prep-cm">
-                Students embark on a task-based problem-solving real-world scenario with a mission
-                for a wildlife release in a nearby wildlife refuge using habitat maps adapted from
-                Brazoria National Wildlife Refuge of coastal eastern Texas.
-              </p>
-            </div>
+          <!-- list detail -->
+          <div class="intg-stand-detail">
+            <ul class="main-detail">
+              <li class="text-style-prep-cm">Science</li>
+            </ul>
+            <ul class="sub-detal">
+              <li class="text-style-prep-cm">
+                6.12E Describe biotic and abiotic parts of an ecosystem in which organisms
+                interact.
+              </li>
+              <li class="text-style-prep-cm">
+                7.10A Observe and describe how different environments, including microhabitats in
+                schoolyards and biomes, support different varieties of organisms.
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-
-      <!--Integrated Standards Alignment  -->
-      <section class="intg-stand-section">
-        <div class="intg-stand-section-div">
-          <!-- heading -->
-          <div class="intg-stand-heading">
-            <h3 class="text-style-heading-s2-cm">Integrated Standards Alignment</h3>
-          </div>
-
-          <!-- Looking Behind: -->
-          <div class="intg-stand-detail-list">
-            <div class="intg-stand-list">
-              <h4>Looking Behind:</h4>
-              <p class="text-style-prep-cm">Grades 3 and 4</p>
-            </div>
-            <!-- list detail -->
-            <div class="intg-stand-detail">
-              <ul class="main-detail">
-                <li class="text-style-prep-cm">Science</li>
-              </ul>
-              <ul class="sub-detal">
-                <li class="text-style-prep-cm">
-                  3.9A Investigate that most producers need sunlight, water, and carbon dioxide to
-                  make their own food, while consumers are dependent on other organisms for food.
-                </li>
-                <li class="text-style-prep-cm">
-                  3.9A Investigate that most producers need sunlight, water, and carbon dioxide to
-                  make their own food, while consumers are dependent on other organisms for food.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Looking Ahead: -->
-          <div class="intg-stand-detail-list">
-            <div class="intg-stand-list">
-              <h4>Looking Ahead::</h4>
-              <p class="text-style-prep-cm">Grades 3 and 4</p>
-            </div>
-            <!-- list detail -->
-            <div class="intg-stand-detail">
-              <ul class="main-detail">
-                <li class="text-style-prep-cm">Science</li>
-              </ul>
-              <ul class="sub-detal">
-                <li class="text-style-prep-cm">
-                  6.12E Describe biotic and abiotic parts of an ecosystem in which organisms
-                  interact.
-                </li>
-                <li class="text-style-prep-cm">
-                  7.10A Observe and describe how different environments, including microhabitats in
-                  schoolyards and biomes, support different varieties of organisms.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </section>
+  </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/Animated-Circular-Progress-Bar-with-jQuery-Canvas-Circle-Progress/dist/circle-progress.js"></script>
-    <script src="./js/custom.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script src="./js/Animated-Circular-Progress-Bar-with-jQuery-Canvas-Circle-Progress/dist/circle-progress.js"></script>
+  <script src="./js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
