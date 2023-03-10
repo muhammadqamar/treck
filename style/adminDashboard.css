@@ -1,0 +1,96 @@
+.welcome-section {
+  max-width: 1440px;
+  margin: auto;
+  padding: 24px 0 24px 64px;
+}
+@media (max-width: 1100px) {
+  .welcome-section {
+    padding: 24px;
+  }
+}
+.welcome-section .welcome-heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #1a1a1a;
+}
+
+.welcome-section .welcome-text {
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
+}
+.school-section {
+  max-width: 964px;
+  margin: auto;
+}
+.cards-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+@media (max-width: 660px) {
+  .cards-box {
+    padding: 0 24px;
+  }
+}
+.cards-box .card {
+  width: 310px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+}
+@media (max-width: 660px) {
+  .cards-box .card {
+    width: 100%;
+  }
+}
+.cards-box .card img {
+  width: 24px;
+  height: auto;
+}
+.cards-box .card .numbers-heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #1a1a1a;
+}
+.cards-box .card .name-text {
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+.recent-treks-section {
+  max-width: 964px;
+  margin: auto;
+  padding: 16px 0 180px;
+}
+@media (max-width: 1025px) {
+  .recent-treks-section {
+    padding: 16px 0 100px;
+  }
+}
+@media (max-width: 400px) {
+  .recent-treks-section {
+    padding: 16px 0 80px;
+  }
+}
+.recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body {
+  width: 300px;
+}
+.recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body img {
+  width: 100%;
+  height: auto;
+}
