@@ -1,0 +1,168 @@
+.admin-teacher-section {
+  margin: 0 auto 40px;
+}
+.welcome-section .admin-content {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 24px 0;
+}
+.admin-text {
+  margin: 0;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
+}
+.welcome-section .teacher-about-section {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 16px;
+  align-items: center;
+}
+.schedule-section {
+  padding: 24px 0 0;
+}
+.schedule-section .classes-box {
+  max-width: 320px;
+  width: 100%;
+  padding: 16px;
+  display: block;
+  background: #ffffff;
+  border-radius: 16px;
+}
+.teacher-about-section .teacher-profile-box {
+  max-width: 320px;
+  width: 100%;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 16px;
+}
+.teacher-profile-box .profile_img {
+  width: 96px;
+  height: 100%;
+}
+.teacher-profile-box .user-heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 16px 0 0;
+  text-align: center;
+  color: #1a1a1a;
+}
+.teacher-profile-box .user-text {
+  font-family: "Arial";
+  font-weight: 400;
+  color: #bbbbbb;
+}
+.teacher-about-section .about-box {
+  width: 100%;
+  padding: 16px 0 16px 16px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+.about-heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 0 8px;
+  color: #1a1a1a;
+}
+.class-heading {
+  font-weight: 500;
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* Drop Down Styling */
+.period-box {
+}
+.period-box .dropdown-button {
+  border: none;
+  font-family: "Nunito";
+  font-weight: 500;
+  color: #757575;
+}
+.class_horizontal_line {
+  margin: 8px 0;
+}
+.dropdown-item {
+  padding: 2px 8px !important;
+}
+.dropdown-item:hover {
+  background: transparent !important;
+}
+.dropdown-item p {
+  padding: 2px 4px;
+  margin: 0;
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #757575;
+}
+.dropdown-item p:hover {
+  background: rgba(31, 165, 212, 0.08);
+  color: #0b5d7a;
+  border-radius: 4px;
+}
+/* End Drop Down Styling */
+.about-box .about-text {
+  max-width: 592px;
+  width: 100%;
+  margin: 0 0 16px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+.about-box .about-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+.about-box .about-details {
+}
+.about-details .about-detail-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.about-detail-box .detail-content {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  background: rgba(31, 165, 212, 0.08);
+  border-radius: 4px;
+  gap: 16px;
+}
+.detail-content .detail-heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: #0b5d7a;
+}
+.detail-content .detail-text {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: #0b5d7a;
+}

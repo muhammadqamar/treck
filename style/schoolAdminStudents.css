@@ -1,0 +1,3 @@
+.students-table .table tbody tr td:last-child {
+  text-align: left;
+}

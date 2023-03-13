@@ -44,7 +44,11 @@
   background: #ffffff;
   border-radius: 16px;
 }
-.calendar-container .calendar-flex-box .calendar-right-box .rpa-segments-box .rpa-heading {
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-heading {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
@@ -54,7 +58,11 @@
   margin-bottom: 16px;
 }
 
-.calendar-container .calendar-flex-box .calendar-right-box .rpa-segments-box .rpa-segments-form {
+.calendar-container
+  .calendar-flex-box
+  .calendar-right-box
+  .rpa-segments-box
+  .rpa-segments-form {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -88,7 +96,7 @@
   .rpa-segments-form
   .form-check
   .form-check-input:focus {
-  box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 0%);
+  /* box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 0%); */
 }
 
 .calendar-container

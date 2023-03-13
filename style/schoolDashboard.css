@@ -1,3 +1,12 @@
+.nav-section {
+  padding-top: 24px;
+}
+.main-container {
+  margin: 0 auto;
+}
+.nav-section ul {
+  margin: 0;
+}
 .welcome-section {
   max-width: 1440px;
   margin: auto;
@@ -15,6 +24,7 @@
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
+  margin: 0;
   font-size: 36px;
   line-height: 48px;
   color: #1a1a1a;
@@ -23,6 +33,7 @@
 .welcome-content .welcome-text {
   font-family: "Droid Sans";
   font-style: normal;
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -109,7 +120,16 @@
 }
 .recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body h3 {
   margin: 0;
+}
+.recent-treks-section-div
+  .recent-treks-cards-list
+  .recent-treks-card-body
+  .recent-second-card
+  h3 {
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
+  width: 113px;
 }
 .recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body img {
   width: 96px;
@@ -141,6 +161,20 @@
     margin: 16px 0 16px;
   }
 }
+.table-section .table_tabs ul {
+  max-width: 480px;
+  width: 100%;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+@media (max-width: 565px) {
+  .table-section .table_tabs ul {
+    flex-wrap: wrap;
+  }
+}
+.table-section .table_tabs li button {
+  padding: 4px 27px;
+}
 .table-section .add-teacher-box {
   display: flex;
   flex-wrap: wrap;
@@ -148,7 +182,7 @@
   align-items: center;
   padding: 16px 0;
 }
-@media (max-width: 520px) {
+@media (max-width: 565px) {
   .table-section .add-teacher-box {
     gap: 16px;
   }
@@ -159,17 +193,20 @@
   gap: 16px;
 }
 .table-section .search-filter-box input {
-  font-family: "Droid Sans";
+  width: 240px;
   border: none;
+  padding: 8px;
+  border-bottom: 1.5px solid #757575;
+}
+.search-filter-box input::placeholder {
+  font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  padding: 8px;
-  border-bottom: 1.5px solid #757575;
-  color: #757575;
+  color: #e4e4e4;
 }
-.table-section .search-filter-box input:focus-visible {
+.search-filter-box input:focus-visible {
   outline: none;
 }
 .add-teacher-box .filter-box {
@@ -220,10 +257,12 @@
 tbody,
 td,
 tfoot,
-th,
-thead,
 tr {
   border-style: none !important;
+}
+th,
+thead {
+  border-bottom: 1px solid #1a1a1a !important;
 }
 .students-table .table th .th1,
 .th2 {
@@ -247,24 +286,72 @@ tr {
 .students-table .table tbody tr .user-box {
   padding: 12px 0 12px 16px;
 }
-.students-table .table tbody .second-row {
-  background: rgba(31, 165, 212, 0.08);
-}
-.students-table .table tbody .second-row td {
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #0b5d7a;
-}
 .students-table .table tbody tr td {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
+  padding: 22px 8px 18px;
   font-size: 14px;
   line-height: 20px;
   color: #757575;
+}
+.students-table .table tbody tr:hover {
+  background: rgba(31, 165, 212, 0.08);
+  color: #0b5d7a;
+}
+.students-table .table tbody tr td .dropdown .dropdown_btn {
+  position: relative;
+  border: none;
+  background: transparent;
+}
+.students-table .table tbody tr td .dropdown .dropdown-menu.show {
+  min-width: 200px;
+  border-radius: 4px;
+  /* inset: 12px 1px auto auto !important; */
+  inset: 12px 16px auto auto !important;
+  box-shadow: 0px 4px 12px 2px rgba(81, 81, 81, 0.16);
+  border: none;
+  padding: 8px;
+}
+.students-table .table tbody tr td .dropdown button.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 184px;
+  padding: 6px 0 6px 4px;
+  border-radius: 4px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
+}
+.students-table .table tbody tr td .dropdown button.dropdown-item:hover {
+  background: rgba(31, 165, 212, 0.08);
+  color: #0b5d7a;
+}
+.students-table .table tbody tr td .dropdown .dropdown-menu.show::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 11.17px solid #fff;
+}
+.students-table .table tbody tr td:last-child {
+  text-align: right;
+  padding: 20px 12px 20px 0;
+}
+.students-table .table tbody tr .user-box {
+  padding: 16px 0 18px 16px;
+}
+.students-table .table tbody .grade .grades_box {
+  display: flex;
+  gap: 8px;
 }
 .students-table .table tbody .grade span {
   width: 36px;
@@ -273,7 +360,7 @@ tr {
   border-radius: 4px;
   padding: 4px 8px;
 }
-.students-table .table tbody .grade .span {
+.students-table .table tbody span:hover {
   background: rgba(31, 165, 212, 0.08);
 }
 .students-table .table .table-user {
@@ -288,6 +375,7 @@ tr {
 .students-table .table .table-user h5 {
   font-family: "Arial";
   font-style: normal;
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;

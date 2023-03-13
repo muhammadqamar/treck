@@ -5,10 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>School Dashboard</title>
+    <title>Admin / Schools</title>
     <link href="./style/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style/header-section.css" />
+    <link rel="stylesheet" href="./style/schoolAdminTeachers.css" />
+    <link rel="stylesheet" href="./style/addNewTeacherModal.css" />
     <link rel="stylesheet" href="./style/schoolDashboard.css" />
+    <link rel="stylesheet" href="./style/calendar.css" />
+    <link rel="stylesheet" href="./style/adminSchools.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 </head>
@@ -73,9 +77,13 @@
     <section class="main-container">
         <nav class="nav-section">
             <ul>
-                <li class="nav-section-selected">
-                    <img src="./assets/img/nav_dashboard-dots.svg" />
+                <li>
+                    <img src="./assets/img/unselect-nav-dashboard.svg" />
                     <a href="/">Dashboard</a>
+                </li>
+                <li class="nav-section-selected">
+                    <img src="./assets/img/select-nav-home.svg" />
+                    <a href="/">Schools</a>
                 </li>
                 <li>
                     <img src="./assets/img/nav-verified-user.svg" />
@@ -85,133 +93,205 @@
                     <img src="./assets/img/nav-user.svg" />
                     <a href="/">Students</a>
                 </li>
-                <li>
-                    <img src="./assets/img/nav_Treks.svg" />
-                    <a href="/">TREKs</a>
-                </li>
             </ul>
         </nav>
     </section>
 
-    <!-- Welcome: section-->
+    <!-- School: section-->
     <section class="welcome-section">
-
-        <!-- Welcome: heading-->
+        <!-- School: heading-->
         <div class="welcome-content">
-            <h2 class="welcome-heading">Welcome Nathan!</h2>
-            <p class="welcome-text">Here's how your academic system looks like</p>
+            <h2 class="welcome-heading">Schools</h2>
+            <p class="welcome-text">Manage your school operations from one central location</p>
         </div>
 
-        <!-- Total Schools: section-->
+        <!-- Schools: section-->
         <section class="school-section">
-            <section class="school-cards-section">
-                <div class="cards-box">
-                    <div class="card">
-                        <img src="./assets/img/verified-user.svg" alt="logo" />
-                        <h3 class="numbers-heading">22</h3>
-                        <p class="name-text">Teachers</p>
+            <section class="school_teacher_cards">
+                <div class="add-teacher-box">
+                    <div class="search-filter-box">
+                        <div class="search_box">
+                            <label class="search-label">Search</label>
+                            <input type="text" name="text" placeholder="School, ID, admin" />
+                        </div>
+                        <div class="filter-box">
+                            <img src="./assets/img/filter-alt.svg" alt="filter logo" />
+                            <p class="filter-heading">Filter</p>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="./assets/img/classes.svg" alt="logo" />
-                        <h3 class="numbers-heading">19</h3>
-                        <p class="name-text">Classes</p>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/groups.svg" alt="logo" />
-                        <h3 class="numbers-heading">11</h3>
-                        <p class="name-text">Groups</p>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/user.svg" alt="logo" />
-                        <h3 class="numbers-heading">345</h3>
-                        <p class="name-text">Students</p>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/assignment.svg" alt="logo" />
-                        <h3 class="numbers-heading">124</h3>
-                        <p class="name-text">Assignments</p>
-                    </div>
+                    <button class="add-heading" type="button" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" class="primary-btn">
+                        Add New School
+                    </button>
 
-                </div>
+                    <!-- Add New Teacher Modal -->
 
-                <!-- Table Section -->
-                <section class="recent-treks-section-div table-section">
-                    <nav class="nav-section treks_nav table_tabs">
-                        <ul class="treks_ul" id="myTab" role="tablist">
-                            <li>
-                                <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
-                                    data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane"
-                                    aria-selected="true">
-                                    Teachers
-                                </button>
-                            </li>
-                            <li>
-                                <button class="nav-link" id="to-tab" data-bs-toggle="tab"
-                                    data-bs-target="#todo-tab-pane" type="button" role="tab"
-                                    aria-controls="todo-tab-pane" aria-selected="true">
-                                    Classes
-                                </button>
-                            </li>
-                            <li>
-                                <button class="nav-link" id="inprogress-tab" data-bs-toggle="tab"
-                                    data-bs-target="#inprogress-tab-pane" type="button" role="tab"
-                                    aria-controls="inprogress-tab-pane" aria-selected="true">
-                                    Groups
-                                </button>
-                            </li>
-                            <li>
-                                <button class="nav-link" id="completed-tab" data-bs-toggle="tab"
-                                    data-bs-target="#completed-tab-pane" type="button" role="tab"
-                                    aria-controls="completed-tab-pane" aria-selected="true">
-                                    Students
-                                </button>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="add-teacher-box">
-                        <div class="search-filter-box">
-                            <input type="text" name="text" placeholder="Search..." />
-                            <div class="filter-box">
-                                <img src="./assets/img/filter-alt.svg" alt="filter logo" />
-                                <p class="filter-heading">Filter</p>
+                    <div class="modal fade students-modal" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-header-title">
+                                        <h2 class="modal-title" id="exampleModalLabel">New School</h2>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input_section">
+                                        <div class="personal_box">
+                                            <p class="personal-text">School</p>
+                                            <div class="info_box">
+                                                <img class="action_logo" src="./assets/img/import.svg" alt="logo" />
+                                                <p class="personal-text import-text">Import info</p>
+                                            </div>
+                                        </div>
+                                        <div class="input_box brief_input_box">
+                                            <div class="label_box brief_label_box id_label_box">
+                                                <label class="label">School name</label>
+                                                <input class="brief_info id_info" type="text" name="text"
+                                                    placeholder="Enter school’s name here" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal_line"></div>
+                                    <div class="input_section">
+                                        <p class="personal-text">Administrator</p>
+                                    </div>
+                                    <div class="personal_box user-profile-box">
+                                        <img src="./assets/img/user-profile.svg" alt="logo" />
+                                        <div class="info_box">
+                                            <img class="action_logo" src="./assets/img/upload.svg" alt="logo" />
+                                            <p class="personal-text import-text">Upload</p>
+                                        </div>
+                                        <div class="info_box">
+                                            <img class="action_logo" src="./assets/img/delete-circled-outline.svg"
+                                                alt="logo" />
+                                            <p class="personal-text import-text remove_text">Remove</p>
+                                        </div>
+                                    </div>
+                                    <div class="input_section school_input_box">
+                                        <div class="input_box">
+                                            <div class="label_box">
+                                                <label class="label">First name</label>
+                                                <input type="text" name="text"
+                                                    placeholder="Enter teacher’s first name here" />
+                                            </div>
+                                        </div>
+                                        <div class="input_box">
+                                            <div class="label_box">
+                                                <label class="label">Last name</label>
+                                                <input type="text" name="text"
+                                                    placeholder="Enter teacher’s last name here" />
+                                            </div>
+                                        </div>
+                                        <div class="input_box">
+                                            <div class="label_box">
+                                                <label class="label">Email</label>
+                                                <input type="email" name="email" placeholder="johndoe@gmail.com" />
+                                            </div>
+                                        </div>
+                                        <div class="input_box">
+                                            <div class="label_box">
+                                                <label class="label">Password</label>
+                                                <input type="password" name="password" placeholder="***" />
+                                            </div>
+                                        </div>
+                                        <div class="input_box brief_input_box">
+                                            <div class="label_box brief_label_box">
+                                                <label class="label">About</label>
+                                                <input class="brief_info" type="text" name="text"
+                                                    placeholder="Enter a brief description here                                                " />
+                                            </div>
+                                        </div>
+                                        <div class="input_box brief_input_box">
+                                            <div class="label_box brief_label_box id_label_box">
+                                                <label class="label">ID</label>
+                                                <input class="brief_info id_info" type="password" name="password"
+                                                    placeholder="0000" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input_section">
+                                        <div class="btn_box">
+                                            <button class="btn" type="button" data-bs-dismiss="modal"
+                                                aria-label="Close">Cancel</button>
+                                            <button class="btn">Add</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="add-box">
-                            <img src="./assets/img/add.svg" alt="logo" />
-                            <p class="add-heading">Add New Teacher</p>
-                        </div>
                     </div>
+
+                    <!-- End Modal -->
+                </div>
+
+                <!-- Admin School Table Section -->
+                <section class="recent-treks-section-div table-school-section">
+
                     <div class="students-table">
-                        <table class="table">
+                        <div class="school-box">
+                            <div class="showing-row-box">
+                                <p class="showing-row-text">Showing 1 - 5 of 25</p>
+                                <div class="row-box">
+                                    <p class="showing-row-text">Rows per page</p>
+                                    <div class="show-page">
+                                        <span class="showing-row-text">5</span>
+                                        <img src="./assets/img//show-down-page.svg" alt="logo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-box">
+                                <p class="showing-row-text">First</p>
+                                <img class="previous-slide-img" src="./assets/img/previous-arrow.svg" alt="logo" />
+                                <div class="slides-boxes">
+                                    <div class="slide-box"><span class="showing-row-text slide-num">1</span></div>
+                                    <div class="slide-box"><span class="showing-row-text slide-num slide-num2">2</span>
+                                    </div>
+                                    <div class="slide-box"><span class="showing-row-text slide-num slide-num2">3</span>
+                                    </div>
+                                </div>
+                                <img class="last-slide-img" src="./assets/img/last-slide.svg" alt="logo" />
+                                <p class="showing-row-text">Last</p>
+                            </div>
+                        </div>
+                        <table class="table teacher_table">
                             <thead>
                                 <tr>
                                     <th class="">
                                         <div class="th1">
-                                            Teacher
+                                            School
                                             <img src="./assets/img/showing.svg" alt="logo" />
                                         </div>
                                     </th>
                                     <th>
                                         <div class="th1 th2">
-                                            Email
+                                            Administrator
                                             <img src="./assets/img/showing.svg" alt="logo" />
                                         </div>
                                     </th>
                                     <th>
                                         <div class="th1 th3">
-                                            Classes
+                                            ID
                                             <img src="./assets/img/showing.svg" alt="logo" />
                                         </div>
                                     </th>
                                     <th>
                                         <div class="th1 th4">
-                                            Grades
+                                            Teachers
                                             <img src="./assets/img/showing.svg" alt="logo" />
                                         </div>
                                     </th>
                                     <th>
                                         <div class="th1 th5">
-                                            ID
+                                            Students
+                                            <img src="./assets/img/showing.svg" alt="logo" />
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="th1 th5">
+                                            Region / District
                                             <img src="./assets/img/showing.svg" alt="logo" />
                                         </div>
                                     </th>
@@ -223,20 +303,19 @@
                                         <div class="table-user">
                                             <img src="./assets/img/user1.svg" alt="user" />
                                             <div class="user-about">
-                                                <h5>Jane Cooper</h5>
+                                                <h5>Sunnyvale Elementary School</h5>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="table-status">tranthuy.nute@gmail.com</div>
-                                    </td>
-                                    <td>4</td>
-                                    <td class="grade">
-                                        <span>
-                                            4th
-                                        </span>
+                                        <div class="table-status">Serenity Fisher</div>
                                     </td>
                                     <td>3627</td>
+                                    <td>
+                                        248
+                                    </td>
+                                    <td>456</td>
+                                    <td>Texas</td>
                                     <td>
                                         <div class="dropdown">
                                             <button class="dropdown_btn" type="button" id="dropdownMenu2"
@@ -259,22 +338,19 @@
                                         <div class="table-user">
                                             <img src="./assets/img/user2.svg" alt="user" />
                                             <div class="user-about">
-                                                <h5>Wade Warren</h5>
+                                                <h5>Maple Grove Elementary School</h5>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="table-status wade-email">manhhachkt08@gmail.com</div>
+                                        <div class="table-status wade-email">Nathan Cooper</div>
                                     </td>
-                                    <td>5</td>
-                                    <td class="grade">
-                                        <div class="grades_box">
-                                            <span class="span">4th</span>
-                                            <span class="span">5th</span>
-
-                                        </div>
+                                    <td>3628</td>
+                                    <td>
+                                        567
                                     </td>
-                                    <td>5322</td>
+                                    <td>443</td>
+                                    <td>Texas</td>
                                     <td>
                                         <div class="dropdown">
                                             <button class="dropdown_btn" type="button" id="dropdownMenu2"
@@ -297,21 +373,19 @@
                                         <div class="table-user">
                                             <img src="./assets/img/user3.svg" alt="user" />
                                             <div class="user-about">
-                                                <h5>Esther Howard</h5>
+                                                <h5>Oakwood Elementary School</h5>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="table-status">nvt.isst.nute@gmail.com</div>
+                                        <div class="table-status">Pat Alexander</div>
                                     </td>
-                                    <td><span>3</span></td>
-                                    <td class="grade">
-                                        <div class="grades_box">
-                                            <span>3rd</span>
-                                            <span>4th</span>
-                                        </div>
+                                    <td><span>3024</span></td>
+                                    <td>
+                                        275
                                     </td>
-                                    <td>3024</td>
+                                    <td>275</td>
+                                    <td>Texas</td>
                                     <td>
                                         <div class="dropdown">
                                             <button class="dropdown_btn" type="button" id="dropdownMenu2"
@@ -334,21 +408,20 @@
                                         <div class="table-user">
                                             <img src="./assets/img/user4.svg" alt="user" />
                                             <div class="user-about">
-                                                <h5>Brooklyn Simmons</h5>
+                                                <h5>Meadowbrook Elementary School</h5>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="table-status">trungkienspktnd@gamail.com</div>
-                                    </td>
-                                    <td>3</td>
-                                    <td class="grade">
-                                        <span>
-                                            5th
-                                        </span>
-                                    </td>
+                                        <div class="table-status">Dianne Russell</div>
                                     </td>
                                     <td>3614</td>
+                                    <td>
+                                        443
+                                    </td>
+                                    </td>
+                                    <td>567</td>
+                                    <td>Texas</td>
                                     <td>
                                         <div class="dropdown">
                                             <button class="dropdown_btn" type="button" id="dropdownMenu2"
@@ -371,21 +444,20 @@
                                         <div class="table-user">
                                             <img src="./assets/img/user5.svg" alt="user" />
                                             <div class="user-about">
-                                                <h5>Jenny Wilson</h5>
+                                                <h5>Riverdale Elementary School</h5>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="table-status">trungkienspktnd@gamail.com</div>
+                                        <div class="table-status">Cristofer Vetrovs</div>
                                     </td>
-                                    <td>3</td>
-                                    <td class="grade">
-                                        <span>
-                                            3rd
-                                        </span>
+                                    <td>8723</td>
+                                    <td>
+                                        456
                                     </td>
                                     </td>
-                                    <td>2984</td>
+                                    <td>248</td>
+                                    <td>Texas</td>
                                     <td>
                                         <div class="dropdown">
                                             <button class="dropdown_btn" type="button" id="dropdownMenu2"
@@ -405,68 +477,25 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                </section>
-            </section>
-            <!-- Recent TREKs -->
-            <section class="recent-treks-section">
-                <div class="recent-treks-section-div">
-                    <!--  TREKs header-->
-                    <div class="recent-treks-header section-div-header">
-                        <h2>Top TREKs</h2>
-                        <div>
-                            <a href="#">See All</a>
-                        </div>
-                    </div>
-                    <!-- TREKs cards -->
-                    <div class="recent-treks-cards-list">
-                        <!-- each cards  -->
-
-                        <!-- card 1 -->
-                        <div class="recent-treks-card-body">
-                            <div>
-                                <img src="./assets/img/admin_rec_tre_img1.svg" />
+                        <div class="school-box">
+                            <div class="showing-row-box">
+                                <p class="showing-row-text">Showing 1 - 5 of 25</p>
                             </div>
-                            <div>
-                                <h3>5.12A Interdependence</h3>
-                                <span>Due date: May 17, 2023</span>
-                            </div>
-                        </div>
-                        <!-- card 2 -->
-                        <div class="recent-treks-card-body">
-                            <div>
-                                <img src="./assets/img/admin_rec_tre_img2.svg" />
-                            </div>
-                            <div class="recent-second-card">
-                                <h3>5.7B Forces & Experimental Design</h3>
-                                <span>Due date: May 17, 2023</span>
-                            </div>
-                        </div>
-                        <!-- card 3 -->
-                        <div class="recent-treks-card-body">
-                            <div>
-                                <img src="./assets/img/admin_rec_tre_img3.svg" />
-                            </div>
-                            <div>
-                                <h3>5.6A Physical Properties</h3>
-                                <span>Due date: May 17, 2023</span>
+                            <div class="row-box">
+                                <p class="showing-row-text">First</p>
+                                <img class="previous-slide-img" src="./assets/img/previous-arrow.svg" alt="logo" />
+                                <div class="slides-boxes">
+                                    <div class="slide-box"><span class="showing-row-text slide-num">1</span></div>
+                                    <div class="slide-box"><span class="showing-row-text slide-num slide-num2">2</span>
+                                    </div>
+                                    <div class="slide-box"><span class="showing-row-text slide-num slide-num2">3</span>
+                                    </div>
+                                </div>
+                                <img class="last-slide-img" src="./assets/img/last-slide.svg" alt="logo" />
+                                <p class="showing-row-text">Last</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Assignment section -->
-                <section class="recent-treks-section assignment-section">
-                    <div class="recent-treks-section-div">
-                        <!--  Assignment header-->
-                        <div class="recent-treks-header section-div-header">
-                            <h2>Assignments</h2>
-                        </div>
-                        <div class="section-div-header">
-                            <h2 class="to-do">To Do</h2>
-                        </div>
-                        <div class="section-div-header">
-                            <h2 class="progress-heading">In Progress</h2>
-                        </div>
                 </section>
             </section>
         </section>

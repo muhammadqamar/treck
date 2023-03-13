@@ -1,0 +1,208 @@
+.modal.fade .modal-dialog {
+  max-width: 640px;
+  width: 100%;
+  margin-right: 30px;
+}
+@media (max-width: 690px) {
+  .modal.fade .modal-dialog {
+    margin: 0;
+  }
+}
+.modal-content {
+  padding: 24px 24px 80px;
+  height: 100%;
+}
+.modal-content .modal-body {
+  padding: 16px 16px 0;
+}
+.modal-content .personal_box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 380px) {
+  .modal-content .personal_box {
+    gap: 16px;
+  }
+}
+.modal-content .user-profile-box {
+  padding: 16px 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.input_section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.horizontal_line {
+  width: 100%;
+  height: 1px;
+  margin: 24px 0;
+  background: #eaedf1;
+}
+.input_section .input_box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media (max-width: 625px) {
+  .input_section .input_box {
+    width: 100%;
+  }
+}
+.input_section .brief_input_box {
+  width: 100%;
+}
+.input_section .btn_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn_box .btn {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0b5d7a;
+  border-radius: 8px;
+  padding: 8px 40px;
+  border: 1px solid #0b5d7a;
+}
+@media (max-width: 360px) {
+  .btn_box .btn {
+    padding: 8px 30px;
+  }
+}
+.btn_box .btn:hover {
+  background: #bbbbbb;
+  border: 1px solid #bbbbbb;
+  color: #fff;
+}
+/* .btn_box .add_btn {
+  border: none;
+  color: #ffffff;
+  background: #bbbbbb;
+} */
+/* .btn_box .add_btn:hover {
+  border: none;
+  color: #ffffff;
+  
+} */
+.brief_input_box .brief_label_box {
+  width: 100%;
+}
+.input_box .label_box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (max-width: 625px) {
+  .input_box .label_box {
+    width: 100%;
+  }
+}
+.label_box .label {
+  font-family: "Droid Sans";
+  font-style: normal;
+  margin: 0 0 0 8px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #757575;
+}
+.label_box input {
+  width: 270px;
+  padding: 8px;
+  border: 1px solid #757575;
+  border-radius: 8px;
+}
+@media (max-width: 625px) {
+  .label_box input {
+    width: 100%;
+  }
+}
+.label_box .brief_info {
+  width: 100%;
+  min-height: 64px;
+}
+.label_box .id_info {
+  min-height: 40px;
+}
+.label_box input::placeholder {
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e4e4e4;
+}
+.label_box input:focus-visible {
+  outline: none;
+}
+.dropdown {
+  padding: 0;
+}
+.dropdown .input_dropdown {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #757575;
+  border-radius: 8px;
+  padding: 8px;
+  background: transparent;
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e4e4e4;
+  min-height: 40px;
+}
+.info_box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.personal-text {
+  margin: 0;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+.personal_box .import-text {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0b5d7a;
+}
+.action_logo {
+  cursor: pointer;
+}
+.personal_box .remove_text {
+  color: #bbbbbb;
+}
+.modal-content .modal-header {
+  padding: 8px;
+}
+.modal-content .modal-title {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1a1a1a;
+}
+.modal-content .assign-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
