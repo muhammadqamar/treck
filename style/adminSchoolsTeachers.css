@@ -1,0 +1,77 @@
+.teacher-about-section .about-box {
+  padding: 16px 16px 32px;
+}
+.about-school-box {
+  display: flex;
+  align-items: center;
+}
+/* media queries */
+@media (max-width: 767px) {
+  .about-school-box {
+    flex-direction: column;
+  }
+}
+@media (max-width: 370px) {
+  .about-school-box .image {
+    width: 100%;
+  }
+}
+.teacher-about-section .view-profile-btn {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  line-height: 24px;
+  background: transparent;
+  text-decoration-line: underline;
+  color: #0b5d7a;
+}
+.teacher-about-section .teacher-profile-box {
+  padding: 16px;
+}
+/* media queries */
+@media (min-width: 1290px) and (max-width: 1406px) {
+  .teacher-about-section .teacher-profile-box {
+    min-height: 248px;
+  }
+}
+@media (max-width: 1290px) {
+  .welcome-section .teacher-about-section {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+.about-box .school-content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edit-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.edit-box .edit-text {
+  color: #0b5d7a;
+  padding: 0;
+  font-weight: 600;
+}
+.teacher-profile-box .user-text {
+  padding: 0 0 8px;
+}
+.about-box .about-text {
+  max-width: 100%;
+}
+.id-content {
+  max-width: 80px;
+}
+.table-section {
+  margin: 16px 0 32px;
+}
+.search-filter-box input {
+  border-radius: 0;
+}
+.students-table .table tbody tr td:last-child {
+  text-align: left;
+}

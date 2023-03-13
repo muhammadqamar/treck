@@ -18,15 +18,27 @@
 }
 .welcome-section .teacher-about-section {
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 16px;
   align-items: center;
 }
+@media (max-width: 1290px) {
+  .welcome-section .teacher-about-section {
+    flex-wrap: wrap;
+  }
+}
 .schedule-section {
+  display: flex;
+  align-items: center;
   padding: 24px 0 0;
+}
+@media (max-width: 1290px) {
+  .schedule-section {
+    flex-wrap: wrap;
+  }
 }
 .schedule-section .classes-box {
   max-width: 320px;
+  min-height: 424px;
   width: 100%;
   padding: 16px;
   display: block;
@@ -43,6 +55,18 @@
   background: #ffffff;
   border-radius: 16px;
 }
+
+/* media queries */
+@media (max-width: 580px) {
+  .teacher-about-section .teacher-profile-box {
+    max-width: 100%;
+  }
+  .schedule-section .classes-box {
+    max-width: 100%;
+  }
+}
+/* End media queries */
+
 .teacher-profile-box .profile_img {
   width: 96px;
   height: 100%;
@@ -64,7 +88,7 @@
 }
 .teacher-about-section .about-box {
   width: 100%;
-  padding: 16px 0 16px 16px;
+  padding: 16px;
   background-color: #ffffff;
   border-radius: 16px;
 }
@@ -83,17 +107,39 @@
   font-size: 16px;
   line-height: 24px;
 }
+
 /* Drop Down Styling */
-.period-box {
-}
 .period-box .dropdown-button {
   border: none;
   font-family: "Nunito";
   font-weight: 500;
   color: #757575;
+  border-radius: 4px;
+  border-bottom: 1px solid #eaedf1;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 8px 0;
+}
+.period-box .dropdown-button:hover {
+  background: rgba(31, 165, 212, 0.08);
+  color: #0b5d7a;
 }
 .class_horizontal_line {
   margin: 8px 0;
+}
+.dropdown .show {
+  background: rgba(31, 165, 212, 0.08);
+  color: #0b5d7a;
+}
+.dropdown .show .rotate-arrow {
+  transform: rotate(180deg);
+}
+.dropdown .dropdown-menu.show {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #eaedf1;
+  border-radius: 0;
+  background-color: #fff;
 }
 .dropdown-item {
   padding: 2px 8px !important;
@@ -117,6 +163,7 @@
   border-radius: 4px;
 }
 /* End Drop Down Styling */
+
 .about-box .about-text {
   max-width: 592px;
   width: 100%;
@@ -133,7 +180,11 @@
   align-items: flex-start;
   gap: 48px;
 }
-.about-box .about-details {
+@media (max-width: 767px) {
+  .about-box .about-details {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 .about-details .about-detail-box {
   display: flex;
@@ -147,6 +198,11 @@
   background: rgba(31, 165, 212, 0.08);
   border-radius: 4px;
   gap: 16px;
+}
+@media (max-width: 360px) {
+  .about-detail-box .detail-content {
+    gap: 6px;
+  }
 }
 .detail-content .detail-heading {
   font-family: "Nunito";
