@@ -114,7 +114,6 @@
   font-family: "Nunito";
   font-weight: 500;
   color: #757575;
-  border-radius: 4px;
   border-bottom: 1px solid #eaedf1;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -135,6 +134,8 @@
   transform: rotate(180deg);
 }
 .dropdown .dropdown-menu.show {
+  position: relative !important;
+  transform: translate(0px, -10px) !important;
   width: 100%;
   border: none;
   border-bottom: 1px solid #eaedf1;
