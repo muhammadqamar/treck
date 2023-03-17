@@ -370,13 +370,40 @@
   color: #9fc33b;
 }
 
-/* checkbox style */
-.checkbox-input[type="checkbox" i] {
+/* Checkbox Styling */
+.form-check-input[type="checkbox" i] {
   width: 18px;
   height: 18px;
 }
-.checkbox-input:checked {
-  background: #ca2738 !important;
+.form-check-input.input-all {
+  border: 2px solid #0b5d7a;
+}
+.form-check-input.form-check-input.input-all:checked {
+  background-color: #0b5d7a;
+}
+.form-check-input.input-recall {
+  border: 2px solid #ca2738;
+}
+.form-check-input.form-check-input.input-recall:checked {
+  background-color: #ca2738;
+}
+.form-check .form-check-input.input-practiceA {
+  border: 2px solid #1fa5d4;
+}
+.form-check-input.input-practiceA:checked {
+  background-color: #1fa5d4;
+}
+.form-check-input.input-practiceB {
+  border: 2px solid #1fa5d4;
+}
+.form-check-input.input-practiceB:checked {
+  background-color: #1fa5d4;
+}
+.form-check-input.input-apply {
+  border: 2px solid #9fc33b;
+}
+.form-check-input.input-apply:checked {
+  background-color: #9fc33b;
 }
 /* End Second Tab Details Styling  */
 
