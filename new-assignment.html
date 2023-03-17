@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style/header-section.css" />
     <link rel="stylesheet" href="./style/adminInternalTeacherView.css" />
     <link rel="stylesheet" href="./style/treksstyle.css" />
+    <link rel="stylesheet" href="./style/calendar.css" />
     <link rel="stylesheet" href="./style/addNewTeacherModal.css" />
     <link rel="stylesheet" href="./style/newAssignment.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -81,7 +82,7 @@
 
         <!-- Assignment Tabs -->
         <nav class="nav-section select-section">
-            <ul class="treks_ul" id="myTab" role="tablist">
+            <ul class="treks_ul select-ul" id="myTab" role="tablist">
                 <li>
                     <button class="select-link active" id="teachers-tab" data-bs-toggle="tab"
                         data-bs-target="#teachers-tab-pane" type="button" role="tab" aria-controls="teachers-tab-pane"
@@ -101,7 +102,7 @@
                     <button class="select-link" id="groups-tab" data-bs-toggle="tab" data-bs-target="#groups-tab-pane"
                         type="button" role="tab" aria-controls="groups-tab-pane" aria-selected="true">
 
-                        <span class="select-num">3</span>
+                        <span class="select-num third-select-num">3</span>
                         Select Class and Students
                     </button>
                 </li>
@@ -113,16 +114,16 @@
     <!-- Tab Details -->
 
     <div class="tab-content" id="myTabContent">
-
         <!-- 1st Tab -->
         <div class="tab-pane fade show active" id="teachers-tab-pane" role="tabpanel" aria-labelledby="teachers-tab"
             tabindex="0">
-            <!-- New Assignment -->
+
+            <!-- New Assignment Day Week Month Buttons -->
             <section class="assignment-section new-assignment-section">
                 <h3 class="new-assignment-heading">New Assignment</h3>
                 <div class="button-box">
                     <button class="assignment-button day-button">Day</button>
-                    <button class="assignment-button week-button">Week</button>
+                    <button class="assignment-button week-button active">Week</button>
                     <button class="assignment-button month-button">Month</button>
                 </div>
             </section>
@@ -138,12 +139,14 @@
                 </section>
             </section>
         </div>
-
         <!-- 2nd Tab -->
-        <div class="tab-pane fade show" id="classes-tab-pane" role="tabpanel" aria-labelledby="classes-tab"
+        <div class="tab-pane fade show active2" id="classes-tab-pane" role="tabpanel" aria-labelledby="classes-tab"
             tabindex="1">
 
+            <!-- New Assignment Calendar Section -->
             <section class="calendar-container select-assignment-section">
+
+                <!-- New Assignment -->
                 <div class="select-trek-box">
                     <h3 class="new-assignment-heading">New Assignment</h3>
                     <div class="select-calendar-box">
@@ -158,13 +161,18 @@
                                     <p class="date-time">10:00 am</p>
                                 </div>
                                 <label class="to-text all-day-label">
-                                    <input type="radio" />
+                                    <input class="checkbox-input" type="checkbox" />
                                     All day
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Vertical Line -->
+                <div class="tab-vertical-line"></div>
+
+                <!-- Assign Content -->
                 <div class="select-trek-box assign-content">
                     <h3 class="new-assignment-heading assign-heading">Assign Content</h3>
                     <p class="date-time assign-text">Select a content to assign</p>
@@ -177,20 +185,31 @@
                                 <img class="rotate-arrow" src="./assets/img/down-arrow.svg" alt="logo" />
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <button class="dropdown-item dropdown-class">
-                                    <p>Group A</p>
+                                <button class="dropdown-item dropdown-item2 dropdown-class">
+                                    <div class="third-card-box">
+                                        <img src="./assets/img/interdependence-logo.svg" alt="img" />
+                                        <p class="interdependence-text">5.12A Interdependence</p>
+                                    </div>
                                 </button>
-                                <button class="dropdown-item dropdown-class" type="button">
-                                    <p>Group B</p>
+                                <button class="dropdown-item dropdown-item2 dropdown-class" type="button">
+                                    <div class="third-card-box">
+                                        <img src="./assets/img/unsplash-logo.svg" alt="img" />
+                                        <p class="interdependence-text">5.7B Forces & Experimental Design</p>
+                                    </div>
                                 </button>
-                                <button class="dropdown-item dropdown-class" type="button">
-                                    <p>Group C</p>
+                                <button class="dropdown-item dropdown-item2 dropdown-class" type="button">
+                                    <div class="third-card-box">
+                                        <img src="./assets/img/unsplash-logo2.svg" alt="img" />
+                                        <p class="interdependence-text">5.6A Physical Properties</p>
+                                    </div>
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="search_box">
                         <label class="trek-label">RPA segment</label>
+
+                        <!-- Select a RPA segment -->
                         <div class="dropdown period-box">
                             <button class="input_dropdown dropdown-button second-drop-button" type="button"
                                 id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -198,20 +217,68 @@
                                 <img class="rotate-arrow" src="./assets/img/down-arrow.svg" alt="logo" />
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <button class="dropdown-item dropdown-class">
-                                    <p>Group A</p>
+                                <!-- Recall Button-->
+                                <button
+                                    class="dropdown-item dropdown-item2 polygon-button recall-button dropdown-class">
+                                    <!-- Recall -->
+                                    <div class="tags-body select-tags-body-polygon recall-poly-body">
+                                        <input class="checkbox-input input-recall" type="checkbox" value=""
+                                            id="recall" />
+                                        <div class="tags-body-polygon">
+                                            <span>R</span>
+                                        </div>
+                                        <div class="tags-body-detail">
+                                            <span>Recall</span>
+                                        </div>
+                                    </div>
                                 </button>
-                                <button class="dropdown-item dropdown-class" type="button">
-                                    <p>Group B</p>
+                                <!-- Practice Button A -->
+                                <button
+                                    class="dropdown-item dropdown-item2 polygon-button practice-button dropdown-class">
+                                    <!-- Practice A -->
+                                    <div class="tags-body select-tags-body-polygon pa-poly-body">
+                                        <input class="checkbox-input" type="checkbox" value="" id="practice A" />
+                                        <div class="tags-body-polygon ">
+                                            <span>P</span>
+                                        </div>
+                                        <div class="pa-body-detail">
+                                            <span>Practice A</span>
+                                        </div>
+                                    </div>
                                 </button>
-                                <button class="dropdown-item dropdown-class" type="button">
-                                    <p>Group C</p>
+                                <!-- Practice Button B -->
+                                <button
+                                    class="dropdown-item dropdown-item2 polygon-button practice-button dropdown-class">
+                                    <!-- Practice B -->
+                                    <div class="tags-body select-tags-body-polygon pa-poly-body">
+                                        <input class="checkbox-input" type="checkbox" value="" id="practice B" />
+                                        <div class="tags-body-polygon ">
+                                            <span>P</span>
+                                        </div>
+                                        <div class="pa-body-detail">
+                                            <span>Practice B</span>
+                                        </div>
+                                    </div>
+                                </button>
+                                <!-- Apply Button -->
+                                <button class="dropdown-item dropdown-item2 polygon-button apply-button dropdown-class">
+                                    <!-- Apply -->
+                                    <div class="tags-body select-tags-body-polygon apply-poly-body">
+                                        <input class="checkbox-input" type="checkbox" value="" id="apply" />
+                                        <div class="tags-body-polygon apply-body-polygon">
+                                            <span>A</span>
+                                        </div>
+                                        <div class="pa-body-detail">
+                                            <span>Apply</span>
+                                        </div>
+                                    </div>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- Button Section -->
             <section class="calendar-container select-assignment-section btns-container">
                 <div class="input_section">
                     <div class="btn_box profile_buttons">
@@ -222,10 +289,12 @@
                 </div>
             </section>
         </div>
-
         <!-- 3rd Tab -->
         <div class="tab-pane fade show" id="groups-tab-pane" role="tabpanel" aria-labelledby="groups-tab" tabindex="2">
+
+            <!-- New Assignment -->
             <section class="calendar-container select-assignment-section third-tab-section">
+                <!-- New Assignment Calendar -->
                 <div class="select-trek-box">
                     <h3 class="new-assignment-heading">New Assignment</h3>
                     <div class="select-calendar-box third-tab-calendar-box">
@@ -240,11 +309,12 @@
                                     <p class="date-time">10:00 am</p>
                                 </div>
                                 <label class="to-text all-day-label">
-                                    <input type="radio" />
+                                    <input class="checkbox-input" type="checkbox" />
                                     All day
                                 </label>
                             </div>
                         </div>
+                        <!-- TREK -->
                         <h4 class="new-assignment-heading select-calendar-heading third-calendar-heading">TREK</h4>
                         <div class="third-trek-box">
                             <div class="third-card-box">
@@ -253,7 +323,9 @@
                             </div>
                             <img class="cursor-img" src="./assets/img/delete.svg" alt="img" />
                         </div>
+                        <!-- horizontal line -->
                         <div class="horizontal-line"></div>
+                        <!-- RPA Segment -->
                         <h4 class="new-assignment-heading select-calendar-heading">RPA Segment</h4>
                         <div class="third-trek-box recall-trek-box">
                             <!-- Recall -->
@@ -279,8 +351,39 @@
                             </div>
                             <img class="cursor-img" src="./assets/img/delete.svg" alt="img" />
                         </div>
+                        <!-- horizontal line -->
+                        <div class="horizontal-line"></div>
+
+                        <!-- Number of Students -->
+                        <h4 class="new-assignment-heading select-calendar-heading">Students</h4>
+
+                        <!-- Student Period and Grade-->
+                        <div class="time-date-box days-box">
+                            <div class="time-date-box">
+                                <p class="date-time student-period">Science 3rd period</p>
+                                <p class="date-time student-period">5th grade</p>
+                                <p class="date-time student-period">8 students</p>
+                            </div>
+                        </div>
+
+                        <!-- Select Student Profile logos -->
+                        <div class="select-students-logos">
+                            <img class="" src="./assets/img/class-student.svg" alt="logo" />
+                            <img class="student-logo" src="./assets/img/class-student.svg" alt="logo" />
+                            <img class="student-logo" src="./assets/img/class-student.svg" alt="logo" />
+                            <img class="student-logo" src="./assets/img/class-student.svg" alt="logo" />
+                            <img class="student-logo" src="./assets/img/class-student.svg" alt="logo" />
+                            <img class="student-logo" src="./assets/img/class-student.svg" alt="logo" />
+                            <img class="student-logo" src="./assets/img/class-student.svg" alt="logo" />
+                            <img class="student-logo" src="./assets/img/class-student.svg" alt="logo" />
+                        </div>
                     </div>
                 </div>
+
+                <!-- Vertical Line -->
+                <div class="tab-vertical-line"></div>
+
+                <!-- Assign Content -->
                 <div class="select-trek-box assign-content">
                     <h3 class="new-assignment-heading assign-heading">Assign Content</h3>
                     <p class="date-time assign-text">What class would you like to assign to?
@@ -294,19 +397,111 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <button class="dropdown-item dropdown-class">
-                                    <p>Group A</p>
+                                    <p>Biology 3rd period</p>
                                 </button>
                                 <button class="dropdown-item dropdown-class" type="button">
-                                    <p>Group B</p>
+                                    <p>Chemistry 4th period</p>
                                 </button>
                                 <button class="dropdown-item dropdown-class" type="button">
-                                    <p>Group C</p>
+                                    <p>Science 3rd period</p>
+                                </button>
+                                <button class="dropdown-item dropdown-class" type="button">
+                                    <p>Physics 4th period</p>
                                 </button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Select a class Period -->
+                    <div class="search_box">
+                        <label class="trek-label">Class</label>
+                        <div class="dropdown period-box">
+                            <button class="input_dropdown dropdown-button second-drop-button" type="button"
+                                id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Science 3rd period
+                                <img class="rotate-arrow" src="./assets/img/down-arrow.svg" alt="logo" />
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <!-- Select All -->
+                                <button class="dropdown-item dropdown-item2 practice-button">
+                                    <!-- Select Student -->
+                                    <div class="time-date-box class-student-box">
+                                        <input class="checkbox-input input-recall" type="checkbox" value=""
+                                            id="checkbox" />
+                                        <div class="tags-body-detail">
+                                            <p class="select-all">Select All</p>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="scroll-box">
+                                    <!-- Student-->
+                                    <button class="dropdown-item dropdown-item2 practice-button">
+                                        <!-- Select Student -->
+                                        <div class="time-date-box class-student-box">
+                                            <input class="checkbox-input input-recall" type="checkbox" value=""
+                                                id="check" />
+                                            <img src="./assets/img/class-student.svg" alt="logo" />
+                                            <div class="tags-body-detail">
+                                                <p class="student-name">Gabriella Hawkins</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <!-- Student-->
+                                    <button class="dropdown-item dropdown-item2 practice-button">
+                                        <!-- Select Student -->
+                                        <div class="time-date-box class-student-box">
+                                            <input class="checkbox-input input-recall" type="checkbox" value=""
+                                                id="check" />
+                                            <img src="./assets/img/class-student.svg" alt="logo" />
+                                            <div class="tags-body-detail">
+                                                <p class="student-name">Gabriella Hawkins</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <!-- Student-->
+                                    <button class="dropdown-item dropdown-item2 practice-button">
+                                        <!-- Select Student -->
+                                        <div class="time-date-box class-student-box">
+                                            <input class="checkbox-input input-recall" type="checkbox" value=""
+                                                id="check" />
+                                            <img src="./assets/img/class-student.svg" alt="logo" />
+                                            <div class="tags-body-detail">
+                                                <p class="student-name">Gabriella Hawkins</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <!-- Student-->
+                                    <button class="dropdown-item dropdown-item2 practice-button">
+                                        <!-- Select Student -->
+                                        <div class="time-date-box class-student-box">
+                                            <input class="checkbox-input input-recall" type="checkbox" value=""
+                                                id="check" />
+                                            <img src="./assets/img/class-student.svg" alt="logo" />
+                                            <div class="tags-body-detail">
+                                                <p class="student-name">Gabriella Hawkins</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <!-- Student-->
+                                    <button class="dropdown-item dropdown-item2 practice-button">
+                                        <!-- Select Student -->
+                                        <div class="time-date-box class-student-box">
+                                            <input class="checkbox-input input-recall" type="checkbox" value=""
+                                                id="check" />
+                                            <img src="./assets/img/class-student.svg" alt="logo" />
+                                            <div class="tags-body-detail">
+                                                <p class="student-name">Gabriella Hawkins</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </section>
+            <!-- Button Section -->
             <section class="calendar-container select-assignment-section btns-container">
                 <div class="input_section">
                     <div class="btn_box profile_buttons">

@@ -9,13 +9,12 @@
 }
 @media (max-width: 1096px) {
   .assignment-section {
-    gap: 30px;
+    gap: 24px !important;
     padding: 24px;
   }
 }
 .assignment-section .back-btn {
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
   border: none;
   background: none;
@@ -32,12 +31,34 @@
 }
 
 /* Tabs styling */
+.select-section {
+  width: 640px;
+  padding: 0;
+}
+.select-ul {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .select-section {
+    width: 100%;
+  }
+  .select-ul {
+    margin: auto;
+  }
+}
+
 .select-section .select-link {
+  width: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #bbbbbb;
 }
 /* active */
 .tab-content > .active {
@@ -59,19 +80,40 @@
 .select-section .select-link .select-num {
   position: relative;
 }
-/* .select-section .select-link .select-num::before {
+.select-section .select-link .select-num::before {
   content: "";
   position: absolute;
-  width: 236px;
+  width: 185px;
   top: 20px;
+  right: 0;
+  left: 40px;
   bottom: 20px;
   overflow: hidden;
   height: 1px;
+  background: #bbbbbb;
+}
+@media (min-width: 520px) and (max-width: 620px) {
+  .select-section .select-link .select-num::before {
+    width: 160px;
+  }
+}
+@media (min-width: 458px) and (max-width: 520px) {
+  .select-section .select-link .select-num::before {
+    width: 140px;
+  }
+}
+@media (max-width: 458px) {
+  .select-section .select-link .select-num::before {
+    display: none;
+  }
+}
+.select-section .select-link.active .select-num::before {
   background: #0b5d7a;
 }
-.select-section .select-link .select-num:nth-last-child(1)::before {
+.third-select-num::before {
   display: none;
-} */
+  overflow: hidden;
+}
 .nav-section ul {
   align-items: baseline;
 }
@@ -96,18 +138,22 @@
   display: flex;
   min-height: 471px;
   padding: 0 64px 108px;
-  gap: 96px;
 }
 @media (max-width: 1395px) {
   .select-assignment-section {
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 50px;
   }
 }
 @media (max-width: 992px) {
   .select-assignment-section {
     padding: 24px;
     gap: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .select-assignment-section {
+    gap: 10px;
   }
 }
 .select-trek-box {
@@ -120,6 +166,27 @@
   .select-trek-box {
     width: 100%;
     min-width: 100%;
+  }
+}
+.tab-vertical-line {
+  min-width: 1px;
+  height: 471px;
+  background: #eaedf1;
+  margin: 0 48px;
+}
+@media (min-width: 580px) and (max-width: 1395px) {
+  .tab-vertical-line {
+    min-width: 471px;
+    height: 1px;
+    background: #eaedf1;
+    margin: 48px 0;
+  }
+}
+@media (max-width: 580px) {
+  .tab-vertical-line {
+    min-width: 100%;
+    height: 1px;
+    margin: 24px 0;
   }
 }
 .select-calendar-box {
@@ -248,6 +315,69 @@
 .input_section .btn_box {
   gap: 16px;
 }
+.dropdown-item2 {
+  border: 1px solid #eaedf1 !important;
+  border-radius: 8px;
+  margin: 0 0 8px;
+}
+.dropdown-item2:hover {
+  background: #f6f7fa !important;
+  border-radius: 8px;
+}
+.dropdown-item p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 4px 8px;
+}
+.dropdown-item2 p {
+  font-weight: 500;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 24px;
+}
+.dropdown-item2 p:hover {
+  background: transparent;
+  color: #1a1a1a;
+}
+.dropdown .dropdown-menu.show {
+  padding: 8px;
+  margin: 14px 0 0 !important;
+}
+
+/* select-tags-body-polygon */
+.select-tags-body-polygon {
+  gap: 12px !important;
+  padding: 16px 12px;
+}
+.polygon-button {
+  padding: 0 !important;
+}
+.recall-button:hover {
+  background: rgba(202, 39, 56, 0.16) !important;
+}
+.practice-button:hover {
+  background: rgba(31, 165, 212, 0.16) !important;
+}
+.apply-button:hover {
+  background: rgba(159, 195, 59, 0.16) !important;
+}
+.apply-body-polygon {
+  background: #9fc33b !important;
+}
+.apply-button .pa-body-detail span {
+  color: #9fc33b;
+}
+
+/* checkbox style */
+.checkbox-input[type="checkbox" i] {
+  width: 18px;
+  height: 18px;
+}
+.checkbox-input:checked {
+  background: #ca2738 !important;
+}
 /* End Second Tab Details Styling  */
 
 /* Start Third Tab Styling */
@@ -320,6 +450,46 @@
 .pa-body-detail span {
   color: #1fa5d4;
 }
+/* Select Class Period Student Styling */
+.class-student-box .select-all {
+  border: none;
+  font-family: "Nunito";
+}
+.scroll-box {
+  height: 260px;
+  overflow-y: scroll;
+}
+.student-period {
+  font-family: "Droid Sans";
+  font-size: 12px;
+  padding: 4px;
+  line-height: 16px;
+}
+.class-student-box {
+  align-items: center;
+}
+.class-student-box .student-name {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0;
+  line-height: 20px;
+  color: #757575;
+}
+.class-student-box .student-name:hover {
+  color: #0b5d7a;
+}
+/* Select students profile logos styling*/
+.select-students-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 8px;
+}
+.select-students-logos .student-logo {
+  margin-left: -4px;
+}
 /* End Third Tab Styling */
 
 /* End Tabs styling */
@@ -356,6 +526,11 @@
   font-size: 16px;
   line-height: 24px;
   color: #757575;
+}
+.button-box .active {
+  background: #0b5d7a;
+  color: #ffffff;
+  border: none;
 }
 .button-box .assignment-button:hover {
   background: #0b5d7a;
