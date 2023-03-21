@@ -95,3 +95,17 @@
   background: #0b5d7a;
   color: #ffffff;
 }
+/* table section styling */
+.students-table .table tbody tr td .dropdown .dropdown-menu.show {
+  position: absolute !important;
+  margin: 0 !important;
+}
+.students-table .table tbody tr td:last-child {
+  text-align: right;
+}
+.students-table .table tbody tr td .dropdown button.dropdown-item {
+  padding: 6px 0 6px 4px !important;
+}
+.students-table .table tbody tr td .dropdown button.dropdown-item:hover {
+  background-color: rgba(31, 165, 212, 0.08) !important;
+}
