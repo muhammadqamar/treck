@@ -1,0 +1,97 @@
+.class-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+.class-content .student-class-box {
+  display: flex;
+  gap: 16px;
+}
+.class-content .student-class-box .button {
+  border: 1px solid #757575;
+  border-radius: 20px;
+  padding: 8px 27px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
+}
+.class-content .student-class-box .button:hover {
+  color: #0b5d7a;
+  background: rgba(31, 165, 212, 0.16);
+  border: 1px solid #0b5d7a;
+}
+
+/* Class Model Start*/
+.modal.fade .modal-dialog.class-modal {
+  max-width: 800px !important;
+  height: initial;
+}
+.modal-content .personal_box {
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: nowrap;
+}
+@media (max-width: 767px) {
+  .modal-content .personal_box {
+    flex-direction: column;
+  }
+}
+.dropdown .grade-dropdown-menu.show {
+  background: #f6f7fa;
+  border-radius: 8px;
+}
+.period-select {
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #757575;
+  border-radius: 8px;
+}
+.class-information .search_box {
+  display: flex;
+  padding: 16px 0 0 !important;
+  padding: 0;
+  flex-direction: column;
+}
+.search_box .trek-label {
+  margin-left: 8px;
+}
+.personal_box .vertical-line {
+  min-width: 1px;
+  height: 471px;
+  background: #eaedf1;
+}
+@media (max-width: 767px) {
+  .personal_box .vertical-line {
+    height: 1px;
+    min-width: 100%;
+  }
+}
+.personal_box .class-information {
+  width: 384px;
+}
+@media (max-width: 480px) {
+  .personal_box .class-information {
+    width: 100%;
+  }
+}
+.personal_box .student-information {
+  width: 320px;
+}
+@media (max-width: 480px) {
+  .personal_box .student-information {
+    width: 100%;
+  }
+}
+/* buttons */
+.class_btns {
+  margin-top: 48px;
+}
+.class_btns .btn:hover {
+  background: #0b5d7a;
+  color: #ffffff;
+}

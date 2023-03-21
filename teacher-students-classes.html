@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>School Admin / Students</title>
+    <title>Teacher / Students / Classes</title>
     <link href="./style/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style/header-section.css" />
     <link rel="stylesheet" href="./style/schoolAdminTeachers.css" />
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./style/schoolAdminStudents.css" />
     <link rel="stylesheet" href="./style/adminInternalTeacherView.css" />
     <link rel="stylesheet" href="./style/teacherStudentsClasses.css" />
+    <link rel="stylesheet" href="./style/newAssignment.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 </head>
@@ -98,12 +99,12 @@
         </nav>
     </section>
 
-    <!-- Students: section-->
+    <!-- Classes: section-->
     <section class="welcome-section">
-        <!-- Student: heading-->
+        <!-- Class: heading-->
         <div class="welcome-content class-content">
             <div class="">
-                <h2 class="welcome-heading">Students</h2>
+                <h2 class="welcome-heading">Classes</h2>
                 <p class="welcome-text">Student enrollment and registration management</p>
             </div>
             <div class="student-class-box">
@@ -112,7 +113,7 @@
             </div>
         </div>
 
-        <!-- Total Students: section-->
+        <!-- Total Classes: section-->
         <section class="school-section">
             <section class="school_teacher_cards">
                 <div class="add-teacher-box">
@@ -128,108 +129,183 @@
                     </div>
                     <button class="add-heading" type="button" type="button" data-bs-toggle="modal"
                         data-bs-target="#exampleModal" class="primary-btn">
-                        Add New Student
+                        Add New Class
                     </button>
 
-                    <!-- Add New Student Modal -->
+                    <!-- Add New Class Modal -->
 
                     <div class="modal fade students-modal" id="exampleModal" tabindex="-1"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-dialog modal-dialog-centered class-modal">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <div class="modal-header-title">
-                                        <h2 class="modal-title" id="exampleModalLabel">New Student</h2>
+                                        <h2 class="modal-title" id="exampleModalLabel">New Class</h2>
                                     </div>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="personal_box">
-                                        <p class="personal-text">Personal information</p>
-                                        <div class="info_box">
-                                            <img class="action_logo" src="./assets/img/import.svg" alt="logo" />
-                                            <p class="personal-text import-text">Import info</p>
-                                        </div>
-                                    </div>
-                                    <div class="personal_box user-profile-box">
-                                        <img src="./assets/img/user-profile.svg" alt="logo" />
-                                        <div class="info_box">
-                                            <img class="action_logo" src="./assets/img/upload.svg" alt="logo" />
-                                            <p class="personal-text import-text">Upload</p>
-                                        </div>
-                                        <div class="info_box">
-                                            <img class="action_logo" src="./assets/img/delete-circled-outline.svg"
-                                                alt="logo" />
-                                            <p class="personal-text import-text remove_text">Remove</p>
-                                        </div>
-                                    </div>
-                                    <div class="input_section">
-                                        <div class="input_box">
-                                            <div class="label_box">
-                                                <label class="label">First name</label>
-                                                <input type="text" name="text"
-                                                    placeholder="Enter student’s first name here" />
+                                        <!-- Left Class box -->
+                                        <div class="class-information">
+                                            <p class="personal-text">Class information</p>
+                                            <div class="search_box">
+                                                <label class="trek-label">Class name</label>
+                                                <p class="period-select">Science 4th period</p>
                                             </div>
-                                        </div>
-                                        <div class="input_box">
-                                            <div class="label_box">
-                                                <label class="label">Last name</label>
-                                                <input type="text" name="text"
-                                                    placeholder="Enter student’s last name here" />
+                                            <div class="search_box">
+                                                <label class="trek-label">Description</label>
+                                                <p class="period-select">Lorem ipsum dolor sit amet consectetur. Viverra
+                                                    enim morbi porttitor lorem ultricies est. Ipsum ipsum mauris eu
+                                                    massa tortor sed volutpat placerat sit.</p>
                                             </div>
+                                            <div class="horizontal-line"></div>
+                                            <p class="personal-text">Schedule</p>
+
                                         </div>
-                                        <div class="input_box">
-                                            <div class="label_box">
-                                                <label class="label">Email</label>
-                                                <input type="email" name="email" placeholder="johndoe@gmail.com" />
-                                            </div>
-                                        </div>
-                                        <div class="input_box">
-                                            <div class="label_box">
-                                                <label class="label">Password</label>
-                                                <input type="password" name="password" placeholder="***" />
-                                            </div>
-                                        </div>
-                                        <div class="input_box brief_input_box">
-                                            <div class="label_box brief_label_box">
-                                                <label class="label">About</label>
-                                                <input class="brief_info" type="text" name="text"
-                                                    placeholder="Enter a brief description here                                                " />
-                                            </div>
-                                        </div>
-                                        <div class="input_box brief_input_box">
-                                            <div class="label_box brief_label_box id_label_box">
-                                                <label class="label">ID</label>
-                                                <input class="brief_info id_info" type="password" name="password"
-                                                    placeholder="0000" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="horizontal_line"></div>
-                                    <div class="input_section">
-                                        <h3 class="modal-title assign-text">Assign student to a class</h3>
-                                        <div class="input_box brief_input_box">
-                                            <div class="label_box brief_label_box id_label_box">
-                                                <label class="label">Class</label>
-                                                <div class="dropdown">
-                                                    <button class="input_dropdown" type="button" id="dropdownMenu2"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">
-                                                        Select classes
-                                                        <img src="./assets/img/down-arrow.svg" alt="logo" />
+                                        <!-- End Left Class box -->
+
+                                        <!-- Vertical Line -->
+                                        <div class="vertical-line"></div>
+
+                                        <!-- Right Student box -->
+                                        <div class="class-information student-information">
+                                            <p class="personal-text">Students</p>
+
+                                            <!-- Select Grade -->
+                                            <div class="search_box">
+                                                <label class="trek-label">Grade</label>
+                                                <div class="dropdown period-box">
+                                                    <button class="input_dropdown dropdown-button" type="button"
+                                                        id="dropdownMenu2" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        Select a Grade
+                                                        <img class="rotate-arrow" src="./assets/img/down-arrow.svg"
+                                                            alt="logo" />
                                                     </button>
                                                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                                        <button class="dropdown-item" type="button">Action</button>
-                                                        <button class="dropdown-item" type="button">Another
-                                                            action</button>
-                                                        <button class="dropdown-item" type="button">Something else
-                                                            here</button>
+                                                        <button class="dropdown-item dropdown-class">
+                                                            <p>1st grade</p>
+                                                        </button>
+                                                        <button class="dropdown-item dropdown-class" type="button">
+                                                            <p>2d grade</p>
+                                                        </button>
+                                                        <button class="dropdown-item dropdown-class" type="button">
+                                                            <p>3rd grade</p>
+                                                        </button>
+                                                        <button class="dropdown-item dropdown-class" type="button">
+                                                            <p>4th grade</p>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- When Selected a Grade -->
+                                            <div class="search_box">
+                                                <label class="trek-label">Grade</label>
+                                                <div class="dropdown period-box">
+                                                    <button class="input_dropdown dropdown-button second-drop-button"
+                                                        type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        3rd period
+                                                        <img class="rotate-arrow" src="./assets/img/down-arrow.svg"
+                                                            alt="logo" />
+                                                    </button>
+                                                    <div class="dropdown-menu grade-dropdown-menu"
+                                                        aria-labelledby="dropdownMenu2">
+                                                        <!-- Select All -->
+                                                        <button class="dropdown-item dropdown-item2 practice-button">
+                                                            <!-- Select Grade -->
+                                                            <div class="time-date-box class-student-box">
+                                                                <input class="form-check-input " type="checkbox"
+                                                                    value="" id="checkbox" />
+                                                                <div class="tags-body-detail">
+                                                                    <p class="select-all">Select All</p>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <div class="scroll-box">
+                                                            <!-- Grade-->
+                                                            <button
+                                                                class="dropdown-item dropdown-item2 practice-button">
+                                                                <!-- Select Grade -->
+                                                                <div class="time-date-box class-student-box">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="check" />
+                                                                    <img src="./assets/img/class-student.svg"
+                                                                        alt="logo" />
+                                                                    <div class="tags-body-detail">
+                                                                        <p class="student-name">Gabriella Hawkins</p>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <!-- Grade-->
+                                                            <button
+                                                                class="dropdown-item dropdown-item2 practice-button">
+                                                                <!-- Select Grade -->
+                                                                <div class="time-date-box class-student-box">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="check" />
+                                                                    <img src="./assets/img/class-student.svg"
+                                                                        alt="logo" />
+                                                                    <div class="tags-body-detail">
+                                                                        <p class="student-name">Gabriella Hawkins</p>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <!-- Grade-->
+                                                            <button
+                                                                class="dropdown-item dropdown-item2 practice-button">
+                                                                <!-- Select Grade -->
+                                                                <div class="time-date-box class-student-box">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="check" />
+                                                                    <img src="./assets/img/class-student.svg"
+                                                                        alt="logo" />
+                                                                    <div class="tags-body-detail">
+                                                                        <p class="student-name">Gabriella Hawkins</p>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <!-- Grade-->
+                                                            <button
+                                                                class="dropdown-item dropdown-item2 practice-button">
+                                                                <!-- Select Grade -->
+                                                                <div class="time-date-box class-student-box">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="check" />
+                                                                    <img src="./assets/img/class-student.svg"
+                                                                        alt="logo" />
+                                                                    <div class="tags-body-detail">
+                                                                        <p class="student-name">Gabriella Hawkins</p>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <!-- Grade-->
+                                                            <button
+                                                                class="dropdown-item dropdown-item2 practice-button">
+                                                                <!-- Select Grade -->
+                                                                <div class="time-date-box class-student-box">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="check" />
+                                                                    <img src="./assets/img/class-student.svg"
+                                                                        alt="logo" />
+                                                                    <div class="tags-body-detail">
+                                                                        <p class="student-name">Gabriella Hawkins</p>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="btn_box">
+                                    </div>
+
+                                    <!-- Button Section -->
+                                    <div class="input_section">
+                                        <div class="btn_box class_btns">
                                             <button class="btn" type="button" data-bs-dismiss="modal"
                                                 aria-label="Close">Cancel</button>
                                             <button class="btn">Add</button>
@@ -289,141 +365,118 @@
                                 <tr>
                                     <th class="">
                                         <div class="th1">
-                                            Student
+                                            Class
                                             <img src="./assets/img/showing.svg" alt="logo" />
                                         </div>
                                     </th>
                                     <th>
                                         <div class="th1 th2">
-                                            Email
+                                            Schedule
                                             <img src="./assets/img/showing.svg" alt="logo" />
                                         </div>
                                     </th>
                                     <th>
                                         <div class="th1 th3">
-                                            Teacher
+                                            Assignments
                                             <img src="./assets/img/showing.svg" alt="logo" />
                                         </div>
                                     </th>
                                     <th>
                                         <div class="th1 th3">
-                                            Classes
+                                            Grade
                                             <img src="./assets/img/showing.svg" alt="logo" />
                                         </div>
                                     </th>
                                     <th>
                                         <div class="th1 th4">
-                                            Grade
+                                            Groups
                                             <img src="./assets/img/showing.svg" alt="logo" />
                                         </div>
                                     </th>
-                                    <!-- <th>
+                                    <th>
                                         <div class="th1 th5">
-                                            ID
+                                            Students
                                             <img src="./assets/img/showing.svg" alt="logo" />
                                         </div>
-                                    </th> -->
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="user-box">
-                                        <div class="table-user">
-                                            <img src="./assets/img/user1.svg" alt="user" />
-                                            <div class="user-about">
-                                                <h5>Jane Cooper</h5>
-                                            </div>
-                                        </div>
+                                    <td>
+                                        Science 3rd period
                                     </td>
                                     <td>
-                                        <div class="table-status">tranthuy.nute@gmail.com</div>
+                                        Mon / 8:30 – 10:30am
                                     </td>
-                                    <td>Jane Cooper</td>
-                                    <td>4</td>
+                                    <td>12</td>
                                     <td class="grade">
                                         <span>
                                             5th
                                         </span>
                                     </td>
+                                    <td>4</td>
+                                    <td>21</td>
                                 </tr>
                                 <tr class="second-row">
-                                    <td class="user-box">
-                                        <div class="table-user">
-                                            <img src="./assets/img/user2.svg" alt="user" />
-                                            <div class="user-about">
-                                                <h5>Wade Warren</h5>
-                                            </div>
-                                        </div>
+                                    <td>
+                                        Science 3rd period
                                     </td>
                                     <td>
-                                        <div class="table-status wade-email">manhhachkt08@gmail.com</div>
+                                        Mon / 8:30 – 10:30am
                                     </td>
-                                    <td>Wade Warren</td>
-                                    <td>5</td>
+                                    <td>12</td>
                                     <td class="grade">
                                         <span>4th</span>
                                     </td>
+                                    <td>5</td>
+                                    <td>21</td>
                                 </tr>
                                 <tr>
-                                    <td class="user-box">
-                                        <div class="table-user">
-                                            <img src="./assets/img/user3.svg" alt="user" />
-                                            <div class="user-about">
-                                                <h5>Esther Howard</h5>
-                                            </div>
-                                        </div>
+                                    <td>
+                                        Science 3rd period
                                     </td>
                                     <td>
-                                        <div class="table-status">nvt.isst.nute@gmail.com</div>
+                                        Mon / 8:30 – 10:30am
                                     </td>
-                                    <td><span>Esther Howard</span></td>
-                                    <td>3</td>
+                                    <td>12</td>
                                     <td class="grade">
                                         <span>3th</span>
                                     </td>
+                                    <td>3</td>
+                                    <td>21</td>
                                 </tr>
                                 <tr>
-                                    <td class="user-box">
-                                        <div class="table-user">
-                                            <img src="./assets/img/user4.svg" alt="user" />
-                                            <div class="user-about">
-                                                <h5>Brooklyn Simmons</h5>
-                                            </div>
-                                        </div>
+                                    <td>
+                                        Science 3rd period
                                     </td>
                                     <td>
-                                        <div class="table-status">trungkienspktnd@gamail.com</div>
+                                        Mon / 8:30 – 10:30am
                                     </td>
-                                    <td>Brooklyn Simmons</td>
-                                    <td>4</td>
+                                    <td>12</td>
                                     <td class="grade">
                                         <span>
                                             3th
                                         </span>
                                     </td>
-                                    </td>
-
+                                    <td>4</td>
+                                    <td>21</td>
                                 </tr>
                                 <tr>
-                                    <td class="user-box">
-                                        <div class="table-user">
-                                            <img src="./assets/img/user5.svg" alt="user" />
-                                            <div class="user-about">
-                                                <h5>Jenny Wilson</h5>
-                                            </div>
-                                        </div>
+                                    <td>
+                                        Science 3rd period
                                     </td>
                                     <td>
-                                        <div class="table-status">trungkienspktnd@gamail.com</div>
+                                        Mon / 8:30 – 10:30am
                                     </td>
-                                    <td>Jenny Wilson</td>
-                                    <td>5</td>
+                                    <td>12</td>
                                     <td class="grade">
                                         <span>
                                             4th
                                         </span>
                                     </td>
-                                    </td>
+                                    <td>5</td>
+                                    <td>21</td>
                                 </tr>
                             </tbody>
                         </table>

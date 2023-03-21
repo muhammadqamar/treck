@@ -144,13 +144,14 @@
 .dropdown-item .page-row-para {
   text-align: center;
 }
-.dropdown-menu.show {
+.rows-dropdown-menu.show {
   min-width: 64px !important;
-  transform: translate(590px, 457px) !important;
+  /* transform: translate(590px, 457px) !important; */
 }
 .add-heading {
   font-family: "Nunito";
   font-style: normal;
+  border: none;
   margin: 0;
   border-radius: 8px;
   font-weight: 500;
