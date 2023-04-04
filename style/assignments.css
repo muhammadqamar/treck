@@ -1,0 +1,447 @@
+.main_assignment_section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.main_assignment_section .assigmint_back_button {
+  margin-bottom: 16px;
+}
+.main_assignment_section .assigmint_back_button a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
+  text-decoration: none;
+  width: 76px;
+}
+
+.main_assignment_section .assig_heading h2 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+}
+
+.main_assignment_section .assig_heading .students-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.students-breadcrumb .interdependence-user,
+.students-breadcrumb .interdependence-tab,
+.student_abouts_tab .stu_tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.students-breadcrumb .interdependence-user .inter-user-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  object-fit: fill;
+}
+
+.students-breadcrumb .interdependence-user .inter-user-name {
+  font-family: 'Nunito';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+
+.students-breadcrumb .interdependence-tab .inter-tab-polygon {
+  width: 38px;
+  height: 32px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #ca2738;
+}
+
+.students-breadcrumb .interdependence-tab .inter-tab-polygon h4 {
+  font-family: 'Nunito';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.students-breadcrumb .interdependence-tab .inter-tab-polygon-name {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ca2738;
+  margin: 0;
+}
+
+.main_assignment_section .student_assignment_tab {
+  display: flex;
+  gap: 24px;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+  .main_assignment_section .student_assignment_tab {
+    flex-wrap: wrap;
+  }
+}
+
+.main_assignment_section .student_assignment_tab .assignment_tabs {
+  padding-top: 16px;
+}
+
+.main_assignment_section .student_assignment_tab .assignment_tabs h2 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 16px;
+  color: #1a1a1a;
+}
+
+.main_assignment_section .student_assignment_tab .assignment_tabs ul {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+.main_assignment_section .student_assignment_tab .assignment_tabs ul li {
+  list-style: none;
+}
+
+.main_assignment_section .student_assignment_tab .assignment_tabs ul li .tab_btn.active {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.main_assignment_section .student_assignment_tab .assignment_tabs ul li .tab_btn,
+.student_abouts_tab .student_about {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none !important;
+}
+.main_assignment_section .student_assignment_tab .assignment_tabs ul li .tab_btn .check-g {
+  filter: grayscale(1);
+}
+
+.main_assignment_section .student_assignment_tab .assignment_tabs ul li .tab_btn.active .check-g {
+  filter: grayscale(0);
+}
+.main_assignment_section
+  .student_assignment_tab
+  .assignment_tabs
+  ul
+  li
+  .tab_btn.active
+  .student_abouts_tab
+  .stu_tag
+  img {
+  display: block;
+}
+
+.main_assignment_section
+  .student_assignment_tab
+  .assignment_tabs
+  ul
+  li
+  .tab_btn.active
+  .student_abouts_tab {
+  background: rgba(31, 165, 212, 0.16);
+  min-width: 288px;
+}
+
+.main_assignment_section
+  .student_assignment_tab
+  .assignment_tabs
+  ul
+  li
+  .tab_btn.active
+  .student_abouts_tab
+  .student_about
+  .student_names
+  h4,
+.main_assignment_section
+  .student_assignment_tab
+  .assignment_tabs
+  ul
+  li
+  .tab_btn.active
+  .student_abouts_tab
+  .student_about
+  .student_names
+  p {
+  color: #0b5d7a;
+}
+
+.student_abouts_tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-radius: 8px;
+  min-width: 264px;
+}
+
+.tab_bg_w {
+  background: #ffffff;
+}
+.tab_bg_tr {
+  background: transparent;
+}
+
+.student_abouts_tab .student_about .student_user_img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.student_abouts_tab .student_about .student_names h4 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a1a1a;
+  margin: 0;
+}
+.student_abouts_tab .student_about .student_names p {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  margin: 0;
+  color: #757575;
+}
+.student_abouts_tab .stu_tag .student_label {
+  display: flex;
+  align-items: flex-start;
+  padding: 2px 4px;
+  width: fit-content;
+
+  border-radius: 4px;
+  margin: 0;
+
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.label_green {
+  background: #6dc200;
+}
+.label_red {
+  background: #de6c03;
+}
+.label_black {
+  background: #757575;
+}
+
+.student_abouts_tab .stu_tag img {
+  display: none;
+  transform: rotate(90deg);
+}
+
+/* tab content */
+
+.student_assignment_tab .tab-content {
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.student_assignment_tab .stu_heading {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #1a1a1a;
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eaedf1;
+  margin: 0 0 16px;
+}
+
+.student_assignment_tab .tab-content .tab-pane {
+  flex-direction: column;
+  gap: 136px;
+}
+
+.student_assignment_tab .tab-content .tab-pane .student_buttons {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.student_assignment_tab .tab-content .tab-pane .student_buttons .total_label {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.student_assignment_tab .tab-content .tab-pane .student_buttons .total_label h2 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+
+  color: #1a1a1a;
+}
+
+.student_assignment_tab .tab-content .tab-pane .student_buttons .total_label span {
+  width: fit-content;
+  padding: 8px;
+  background: #eaedf1;
+  border-radius: 8px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+
+  color: #1a1a1a;
+}
+
+.student_assignment_tab .tab-content .tab-pane .student_buttons .save_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 40px;
+  gap: 8px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background: #bbbbbb;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.student_assignment_tab .tab-content .tab-pane .student_grade_card {
+  width: 222px;
+  height: auto;
+  padding: 24px 8px;
+  text-align: center;
+  border-right: 1px solid #eaedf1;
+  /* border-left: 1px solid #eaedf1; */
+}
+
+.student_assignment_tab .tab-content .tab-pane .student_grade_card .student_slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  width: 100%;
+  border-radius: 20px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  margin: 0 0 8px;
+}
+
+.gray_slide {
+  color: #757575;
+  background: #eaedf1;
+}
+.green_slide {
+  color: #80ab07;
+  background: rgba(159, 195, 59, 0.16);
+}
+.gray_grade {
+  color: #bbbbbb;
+}
+.black_grade {
+  color: #1a1a1a;
+}
+
+.slider_cards_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.student_assignment_tab .tab-content .tab-pane .carousel-control-prev,
+.carousel-control-next {
+  width: auto !important;
+}
+.student_assignment_tab .tab-content .tab-pane .carousel-control-prev {
+  transform: rotate(180deg);
+}
+
+.student_assignment_tab .tab-content .tab-pane .student_grade_card p {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 16px;
+
+  color: #1a1a1a;
+}
+
+.student_assignment_tab .tab-content .tab-pane .student_grade_card h2 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 0 16px;
+}
+
+.student_assignment_tab .tab-content .tab-pane .student_grade_card .grade_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 40px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 auto;
+  color: #0b5d7a;
+  background-color: transparent;
+  border: 1px solid #0b5d7a;
+  border-radius: 8px;
+}
