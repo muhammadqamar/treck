@@ -203,6 +203,10 @@
   min-width: 264px;
 }
 
+.tab_op {
+  opacity: 0.4;
+}
+
 .tab_bg_w {
   background: #ffffff;
 }
