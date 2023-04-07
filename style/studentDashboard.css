@@ -1,0 +1,369 @@
+/* main section  */
+.main-student-dashboard {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 64px 24px;
+}
+
+/* welcome card */
+.welcome-student {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+.welcome-student .student-about {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.welcome-student .student-about img {
+  width: auto;
+  height: auto;
+}
+.welcome-student .student-about .stu-about h1 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+
+  margin: 0;
+  color: #1a1a1a;
+}
+.welcome-student .student-about .stu-about p {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+
+  margin: 0;
+  color: #757575;
+}
+
+.welcome-student .detail-prep-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.welcome-student .detail-prep-tags .tags-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  height: auto;
+}
+.tags-body-polygon {
+  width: 48px;
+  height: 42px;
+  /* background-color: #979797; */
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ffffff;
+}
+.welcome-student .detail-prep-tags .tags-body .tags-body-detail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.welcome-student .detail-prep-tags .tags-body .tags-body-detail span {
+  margin: 0;
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #757575;
+}
+.welcome-student .detail-prep-tags .tags-body .tags-body-detail p {
+  margin: 0;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+
+/* overview-poly-body */
+
+.detail-prep-tags .overview-poly-body {
+  background: #eaedf1;
+  border: 1px solid #979797;
+}
+.detail-prep-tags .overview-poly-body .tags-body-polygon {
+  background: #979797;
+}
+
+/* recall-poly-body */
+
+.detail-prep-tags .recall-poly-body .tags-body-polygon {
+  background: #ca2738;
+}
+
+/* pa-poly-body */
+
+.detail-prep-tags .pa-poly-body .tags-body-polygon {
+  background: #1fa5d4;
+}
+
+/*  pb-poly-body */
+
+.detail-prep-tags .pb-poly-body .tags-body-polygon {
+  background: #1fa5d4;
+}
+
+/*  apply-poly-body */
+
+.detail-prep-tags .apply-poly-body .tags-body-polygon {
+  background: #9fc33b;
+}
+
+/* treks */
+
+.stu-treks {
+  padding: 0 !important;
+  margin-bottom: 16px;
+}
+
+/* assignments section */
+
+.assignments-section {
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  margin-bottom: 16px;
+}
+
+.assignments-section .heading {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eaedf1;
+  color: #1a1a1a;
+}
+.assignments-section .assignments_label_card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.assignments-section .assignments_label_card .assig_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 8px;
+  width: 181.33px;
+  height: 116px;
+  background: #ffffff;
+  box-shadow: 0px 0px 24px rgba(151, 151, 151, 0.12);
+  border-radius: 16px;
+}
+.assignments-section .assignments_label_card .assig_card label {
+  display: flex;
+  align-items: center;
+  padding: 2px 4px;
+  width: fit-content;
+  height: 20px;
+  border-radius: 4px;
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+.assignments-section .assignments_label_card .assig_card h1 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0;
+  width: 48px;
+  border: none;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+  padding-bottom: 8px;
+}
+
+.border-gray {
+  border-bottom-color: #757575 !important;
+}
+.border-orange {
+  border-bottom-color: #de6c03 !important;
+}
+.border-green {
+  border-bottom-color: #6dc200 !important;
+}
+
+.bg-gray {
+  background: #757575 !important;
+}
+.bg-orange {
+  background: #de6c03 !important;
+}
+.bg-green {
+  background: #6dc200 !important;
+}
+
+/* report dropdown */
+
+.report-dropdown {
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  margin-bottom: 16px;
+}
+
+.report-dropdown .dropdown-button {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none !important;
+  background: transparent !important;
+  border-bottom: 1px solid #eaedf1 !important;
+  padding-bottom: 8px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+.report-dropdown .dropdown-button img {
+  width: 18px;
+  height: 12px;
+}
+
+.report-dropdown .dropdown-menu {
+  position: relative !important;
+  transform: none !important;
+  border: none !important;
+}
+
+.report-dropdown .dropdown-menu .report-table table {
+  width: 100%;
+}
+.report-dropdown .dropdown-menu .report-table table thead {
+  background-color: #f6f7fa;
+}
+.report-dropdown .dropdown-menu .report-table table thead tr th {
+  padding: 16px 8px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #757575;
+}
+
+.report-dropdown .dropdown-menu .report-table table tbody tr td {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #1a1a1a;
+}
+.report-dropdown .dropdown-menu .report-table table tbody tr td .assignments-table-cs-td-poly {
+  align-items: flex-end;
+}
+.report-dropdown .dropdown-menu .report-table table tbody tr {
+  height: 75px;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eaedf1;
+}
+
+.report-dropdown
+  .dropdown-menu
+  .report-table
+  table
+  tbody
+  tr
+  td
+  .assignments-table-cs-td-poly
+  .polygon-shap {
+  height: 42px !important;
+}
+.report-dropdown
+  .dropdown-menu
+  .report-table
+  table
+  tbody
+  tr
+  td
+  .assignments-table-cs-td-poly
+  .polygon-shap.reviewed-shap {
+  background-color: #ca2738 !important;
+}
+
+.report-dropdown .dropdown-menu .report-table table tbody tr td .grade-label {
+  display: flex;
+  align-items: center;
+  padding: 0px 8px;
+  width: fit-content;
+  height: 24px;
+
+  border-radius: 8px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.grade-report {
+  background: rgba(159, 195, 59, 0.16);
+  color: #80ab07;
+}
+.pending-report {
+  background: rgba(255, 205, 78, 0.16);
+  color: #d69a00;
+}
+.reviewed-report {
+  background: #f6f7fa;
+  color: #979797;
+}
+
+.report-dropdown .dropdown-menu .report-table table tbody tr td .teacher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.report-dropdown .dropdown-menu .report-table table tbody tr td .teacher img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+.report-dropdown .dropdown-menu .report-table table tbody tr td .teacher h3 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #1a1a1a;
+  margin: 0;
+}

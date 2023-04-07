@@ -1,0 +1,311 @@
+.student-overview {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 64px 32px;
+}
+
+/* My TREKs breadcrumbs - */
+
+@media only screen and (max-width: 400px) {
+  .my-trk-bc-section-div .bc-img-1 {
+    margin-right: 8px !important;
+  }
+  .my-trk-bc-section-div .bc-img-2 {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+.my-trk-bc-section {
+  margin-top: 22px;
+}
+.my-trk-bc-section-div {
+  display: flex;
+  align-items: center;
+}
+.my-trk-bc-section-div p {
+  margin-bottom: 0px !important;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #979797;
+}
+.my-trk-bc-section-div .bc-img-1 {
+  margin-right: 18px;
+}
+.my-trk-bc-section-div .bc-img-2 {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/*  My TREKs Detail */
+@media only screen and (max-width: 844px) {
+  .my-trk-detail-section-div {
+    flex-direction: column;
+  }
+  .my-trk-detail-section-div .my-trk-detail-prep {
+    margin-left: 0px !important;
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .my-trk-detail-section-div .my-trk-detail-img {
+    width: 280px !important;
+    height: 144px !important;
+  }
+  .my-trk-detail-section-div .my-trk-detail-img img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.my-trk-detail-section {
+  margin-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eaedf1;
+}
+.my-trk-detail-section-div {
+  display: flex;
+}
+.my-trk-detail-section-div .my-trk-detail-img {
+  width: 320px;
+  height: 184px;
+}
+.my-trk-detail-section-div .my-trk-detail-prep {
+  margin-left: 24px;
+}
+.my-trk-detail-section-div .my-trk-detail-prep .detail-prep-title {
+  margin-bottom: 16px;
+}
+.my-trk-detail-section-div .my-trk-detail-prep .detail-prep-title h2 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.my-trk-detail-section-div .my-trk-detail-prep .detail-prep-desc p {
+  max-width: 640px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.my-trk-detail-section-div .detail-prep-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 16px;
+}
+.my-trk-detail-section-div .detail-prep-tags .tags-body {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 48px;
+  /* background: #eaedf1;
+    border: 1px solid #979797; */
+  border-radius: 24px;
+  padding-left: 8px;
+}
+.tags-body-polygon {
+  width: 38px;
+  height: 32px;
+  /* background-color: #979797; */
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.my-trk-detail-section-div .detail-prep-tags .tags-body .tags-body-detail span {
+  margin-left: 8px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* color: #979797; */
+}
+
+/* overview-poly-body */
+
+.student-assig-tags nav .nav-tabs {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: none !important;
+}
+
+.student-assig-tags nav .nav-tabs .nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: fit-content;
+  height: 40px;
+  background: transparent;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #0b5d7a;
+  border: 1px solid #0b5d7a;
+  border-radius: 24px;
+}
+.student-assig-tags nav .nav-tabs .nav-link.active {
+  background: #eaedf1;
+  color: #757575;
+  border: 1px solid #757575;
+}
+
+.student-over-tab-content {
+  margin-top: 24px;
+}
+
+.student-over-tab-content .tab-pane .overview-flex-box {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 48px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #eaedf1;
+}
+.student-over-tab-content .tab-pane .overview-flex-box .o-t-segments h1,
+.student-over-tab-content .tab-pane .overview-flex-box .o-c-concept h1 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #1a1a1a;
+  margin: 0 0 16px;
+}
+.student-over-tab-content .tab-pane .overview-flex-box .o-t-segments img {
+  padding: 0 67px;
+}
+
+.student-over-tab-content .tab-pane .overview-flex-box .o-t-goal img {
+  padding: 0 89px;
+}
+
+.student-over-tab-content .tab-pane .overview-flex-box .o-c-concept ul {
+  padding-left: 20px !important;
+}
+.student-over-tab-content .tab-pane .overview-flex-box .o-c-concept ul li p {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a1a1a;
+  margin: 0;
+}
+.student-over-tab-content .tab-pane .stu-assig-cards {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.student-over-tab-content .tab-pane .stu-assig-cards .assig-label-card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0px;
+  gap: 8px;
+
+  width: 308px;
+  height: 128px;
+
+  background: #ffffff;
+  border: 1px solid #eaedf1;
+  border-radius: 8px;
+}
+.student-over-tab-content .tab-pane .stu-assig-cards .assig-label-card .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px;
+  background: #f6f7fa;
+  height: 64px;
+  position: relative;
+}
+
+.student-over-tab-content .tab-pane .stu-assig-cards .assig-label-card .header img {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.student-over-tab-content .tab-pane .stu-assig-cards .assig-label-card .tag-assig-tetaul {
+  padding: 8px;
+}
+.student-over-tab-content .tab-pane .stu-assig-cards .assig-label-card .tag-assig-tetaul h3 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 04px;
+  color: #1a1a1a;
+}
+.student-over-tab-content .tab-pane .stu-assig-cards .assig-label-card .tag-assig-tetaul p {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  margin: 0;
+  color: #757575;
+}
+
+.tags-body-polygon {
+  width: 48px;
+  height: 42px;
+  /* background-color: #979797; */
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ffffff;
+}
+
+.bg-red {
+  background: #ca2738;
+}
+.bg-blue {
+  background: #1fa5d4;
+}
+
+/*  apply-poly-body */
+
+.bg-green {
+  background: #9fc33b;
+}
+
+.student-over-tab-content .tab-pane .stu-assig-cards .progress {
+  background-color: #eaedf1 !important;
+  margin-top: 8px;
+}
+.student-over-tab-content .tab-pane .stu-assig-cards .progress .progress-bar {
+  background: #9fc33b !important;
+}

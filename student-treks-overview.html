@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treks</title>
+    <link href="./style/common.css" rel="stylesheet" />
+    <link href="./style/header-section.css" rel="stylesheet" />
+    <link href="./style/treksstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/studentTreksOverview.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg treks-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <div class="header-logo-search">
+            <!-- logo -->
+            <div class="header-logo">
+              <img src="./assets/img/header_logo.svg" alt="svg" />
+            </div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="header-logo-search">
+              <!-- searching input -->
+              <div class="header-search">
+                <img src="./assets/img/header_search.svg" alt="svg" />
+                <input placeholder="Search" />
+              </div>
+            </div>
+          </div>
+          <div class="d-flex" role="search">
+            <div class="header-notification-user">
+              <!-- notification -->
+              <div class="header-notification">
+                <img src="./assets/img/header_bell-notification.svg" alt="svg" />
+              </div>
+              <!-- user detail & Image  -->
+              <div class="header-user">
+                <!-- User Avatar -->
+                <div class="user-avatar">
+                  <img src="./assets/img/header_avatar.svg" alt="svg" />
+                </div>
+                <!-- User short detail -->
+                <div class="user-detail">
+                  <span class="user-detail-name">Kristin Watson</span>
+                  <span>Science teacher</span>
+                </div>
+                <!-- Arrow for open menu -->
+                <div class="user-options">
+                  <img src="./assets/img/header_arrow open.svg" alt="svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Basic Container -->
+    <section class="main-container">
+      <!-- Nav Section -->
+      <nav class="nav-section">
+        <ul>
+          <li>
+            <img src="./assets/img/nav_dashboard-dots_gray.svg" />
+            <a href="/">Dashboard</a>
+          </li>
+          <li class="nav-section-selected">
+            <img src="./assets/img/nav_treks_selected.svg" />
+            <a href="/">TREKs</a>
+          </li>
+          <li>
+            <img src="./assets/img/calendar.svg" />
+            <a href="/">Calendar</a>
+          </li>
+          <li>
+            <img src="./assets/img/nav_students.svg" />
+            <a href="/">Students</a>
+          </li>
+          <li>
+            <img src="./assets/img/nav_reports.svg" />
+            <a href="/">Reports</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- main section body -->
+
+    <section class="student-overview">
+      <!-- My TREKs breadcrumbs -->
+      <section class="my-trk-bc-section">
+        <div class="my-trk-bc-section-div">
+          <!-- breadcrumbs -->
+          <img class="bc-img-1" src="./assets/img/bc_img.svg" />
+          <p>My TREKs</p>
+          <img class="bc-img-2" src="./assets/img/bc_arrow_right.svg" />
+          <p>5.12A Interdependence</p>
+          <img class="bc-img-2" src="./assets/img/bc_arrow_right.svg" />
+          <p>Overview</p>
+        </div>
+      </section>
+      <!-- My TREKs Detail -->
+      <section class="my-trk-detail-section">
+        <div class="my-trk-detail-section-div">
+          <!-- TREKs image  -->
+          <div class="my-trk-detail-img">
+            <img src="./assets/img/tr_main.png" />
+          </div>
+          <!-- TREKs detail -->
+          <div class="my-trk-detail-prep">
+            <!-- Title -->
+            <div class="detail-prep-title">
+              <h2>5.12A Interdependence</h2>
+            </div>
+            <!-- Description -->
+            <div class="detail-prep-desc">
+              <p>
+                Student Expectation: Observe and describe how a variety of organisms survive by
+                interacting with biotic and abiotic factors in a healthy ecosystem.<br />
+                Readiness Standard | Organisms & Environments Strand
+              </p>
+            </div>
+            <!-- Tags -->
+            <div class="student-assig-tags">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link active"
+                    id="nav-home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="true"
+                  >
+                    Overview
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-profile"
+                    aria-selected="false"
+                  >
+                    Assignments
+                  </button>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="tab-content student-over-tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+        >
+          <div class="overview-flex-box">
+            <div class="o-t-segments">
+              <h1>TREK Segments</h1>
+              <img src="./assets/img/segments.png" alt="segments" />
+            </div>
+            <div class="o-c-concept">
+              <h1>Central Concepts</h1>
+              <ul>
+                <li>
+                  <p>
+                    All of life depends on basic needs including food, shelter, air, and space for
+                    habitat.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    All living organisms interact with other living and nonliving parts of their
+                    ecosystems.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Living organisms rely on this integration of living and nonliving components to
+                    grow and reproduce.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--  -->
+          <div class="overview-flex-box">
+            <div class="o-t-segments o-t-goal">
+              <h1>TREK Goals</h1>
+              <img src="./assets/img/goals.png" alt="segments" />
+            </div>
+            <div class="o-c-concept">
+              <h1>Academic Terms</h1>
+              <ul>
+                <li>
+                  <p>Xxx</p>
+                </li>
+                <li>
+                  <p>Xxxx</p>
+                </li>
+                <li>
+                  <p>Xxxxx</p>
+                </li>
+                <li>
+                  <p>Xxxxx</p>
+                </li>
+                <li>
+                  <p>Xxxxx</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab"
+        >
+          <div class="stu-assig-cards">
+            <div>
+              <div class="assig-label-card">
+                <div class="header">
+                  <img src="./assets/img/check.svg" alt="" />
+                  <div class="tags-body-polygon bg-red">
+                    <span>R</span>
+                  </div>
+                </div>
+                <div class="tag-assig-tetaul">
+                  <h3>Molecules</h3>
+                  <p>Recall</p>
+                </div>
+              </div>
+              <div class="progress" style="height: 4px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!--  -->
+            <div>
+              <div class="assig-label-card">
+                <div class="header">
+                  <img src="./assets/img/check.svg" alt="" />
+                  <div class="tags-body-polygon bg-blue">
+                    <span>P</span>
+                  </div>
+                </div>
+                <div class="tag-assig-tetaul">
+                  <h3>Molecules: Chemical formulas</h3>
+                  <p>Practice A</p>
+                </div>
+              </div>
+              <div class="progress" style="height: 4px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <!--  -->
+              <div class="assig-label-card">
+                <div class="header">
+                  <img src="./assets/img/check.svg" alt="" />
+                  <div class="tags-body-polygon bg-blue">
+                    <span>P</span>
+                  </div>
+                </div>
+                <div class="tag-assig-tetaul">
+                  <h3>Molecules: Structural models</h3>
+                  <p>Practice B</p>
+                </div>
+              </div>
+              <div class="progress" style="height: 4px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!--  -->
+            <div>
+              <div class="assig-label-card">
+                <div class="header">
+                  <div class="tags-body-polygon bg-green">
+                    <span>A</span>
+                  </div>
+                </div>
+                <div class="tag-assig-tetaul">
+                  <h3>Molecules: Structural formulas</h3>
+                  <p>Apply</p>
+                </div>
+              </div>
+              <div class="progress" style="height: 4px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 25%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/Animated-Circular-Progress-Bar-with-jQuery-Canvas-Circle-Progress/dist/circle-progress.js"></script>
+    <script src="./js/custom.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
