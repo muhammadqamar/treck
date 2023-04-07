@@ -199,6 +199,10 @@
   padding: 0 89px;
 }
 
+.student-over-tab-content .tab-pane .overview-flex-box .o-c-concept {
+  max-width: 632px;
+}
+
 .student-over-tab-content .tab-pane .overview-flex-box .o-c-concept ul {
   padding-left: 20px !important;
 }
