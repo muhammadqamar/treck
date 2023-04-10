@@ -1,0 +1,43 @@
+.student-over-tab-content .tab-pane .assingment_cards {
+  padding: 0 !important;
+}
+.student-over-tab-content .tab-pane .assingmnent_card_heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a1a1a;
+  margin: 16px 0 8px;
+}
+.student-over-tab-content .tab-pane-border {
+  width: 100%;
+  max-width: 1256px;
+  height: 1px;
+  background: #eaedf1;
+  margin: 16px 0;
+}
+.student-over-tab-content .tab-pane-last-border {
+  margin: 16px 0 48px;
+}
+.student-over-tab-content {
+  margin-top: 0 !important;
+}
+.student-over-tab-content .tab-pane .stu-assig-cards .progress .progress-bar {
+  width: 100%;
+}
+.student-over-tab-content .tab-pane .stu-assig-cards .progress .apply_bar {
+  width: 151px;
+  background: #de6c03;
+}
+.student-over-tab-content .tab-pane .stu-assig-cards .progress .atoms_bar {
+  width: 308px;
+  background: #de6c03;
+}
+.student-over-tab-content .tab-pane .stu-assig-cards .progress .apply_atoms {
+  width: 174px;
+  background: #de6c03;
+}
+.student-over-tab-content .tab-pane .stu-assig-cards .progress .structure_bar {
+  width: 92px;
+}

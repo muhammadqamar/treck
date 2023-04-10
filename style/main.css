@@ -188,6 +188,16 @@ body {
 .recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body {
   width: 280px;
 }
+@media (max-width: 656px) {
+  .recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body {
+    width: 100% !important;
+  }
+}
+@media (max-width: 656px) {
+  .recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body > div > img {
+    width: 100% !important;
+  }
+}
 @media (max-width: 400px) {
   .recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body {
     width: 100% !important;
@@ -204,10 +214,7 @@ body {
 
   color: #000000;
 }
-.recent-treks-section-div
-  .recent-treks-cards-list
-  .recent-treks-card-body
-  span {
+.recent-treks-section-div .recent-treks-cards-list .recent-treks-card-body span {
   font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;

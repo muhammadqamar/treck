@@ -1,7 +1,21 @@
+.treks-overview-container {
+  margin: 0 auto;
+}
+.treks-overview-container .nav-section {
+  padding-top: 24px;
+}
+.treks-overview-container .nav-section ul {
+  margin: 0;
+}
 .student-overview {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 64px 32px;
+}
+@media only screen and (max-width: 767px) {
+  .student-overview {
+    padding: 0 24px 32px;
+  }
 }
 
 /* My TREKs breadcrumbs - */
@@ -16,16 +30,27 @@
   }
 }
 .my-trk-bc-section {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 .my-trk-bc-section-div {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+}
+@media only screen and (max-width: 631px) {
+  .my-trk-bc-section-div {
+    gap: 24px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .my-trk-bc-section-div {
+    justify-content: space-between;
+  }
 }
 .my-trk-bc-section-div p {
   margin-bottom: 0px !important;
 
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -39,7 +64,11 @@
   margin-left: 25px;
   margin-right: 25px;
 }
-
+@media only screen and (max-width: 631px) {
+  .my-trk-bc-section-div .bc-img-2 {
+    margin: 0;
+  }
+}
 /*  My TREKs Detail */
 @media only screen and (max-width: 844px) {
   .my-trk-detail-section-div {
@@ -72,6 +101,17 @@
   width: 320px;
   height: 184px;
 }
+@media only screen and (max-width: 580px) {
+  .my-trk-detail-section-div .my-trk-detail-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .my-trk-detail-section-div .my-trk-detail-img img {
+    width: 100%;
+  }
+}
 .my-trk-detail-section-div .my-trk-detail-prep {
   margin-left: 24px;
 }
@@ -79,7 +119,7 @@
   margin-bottom: 16px;
 }
 .my-trk-detail-section-div .my-trk-detail-prep .detail-prep-title h2 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -89,7 +129,7 @@
 
 .my-trk-detail-section-div .my-trk-detail-prep .detail-prep-desc p {
   max-width: 640px;
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -124,7 +164,7 @@
 }
 .my-trk-detail-section-div .detail-prep-tags .tags-body .tags-body-detail span {
   margin-left: 8px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -150,7 +190,7 @@
   width: fit-content;
   height: 40px;
   background: transparent;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -182,7 +222,7 @@
 }
 .student-over-tab-content .tab-pane .overview-flex-box .o-t-segments h1,
 .student-over-tab-content .tab-pane .overview-flex-box .o-c-concept h1 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -194,9 +234,20 @@
 .student-over-tab-content .tab-pane .overview-flex-box .o-t-segments img {
   padding: 0 67px;
 }
-
+@media screen and (max-width: 992px) {
+  .student-over-tab-content .tab-pane .overview-flex-box .o-t-segments img {
+    padding: 0 24px;
+    width: 100%;
+  }
+}
 .student-over-tab-content .tab-pane .overview-flex-box .o-t-goal img {
   padding: 0 89px;
+}
+@media screen and (max-width: 992px) {
+  .student-over-tab-content .tab-pane .overview-flex-box .o-t-goal img {
+    padding: 0 24px;
+    width: 100%;
+  }
 }
 
 .student-over-tab-content .tab-pane .overview-flex-box .o-c-concept {
@@ -207,7 +258,7 @@
   padding-left: 20px !important;
 }
 .student-over-tab-content .tab-pane .overview-flex-box .o-c-concept ul li p {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -223,7 +274,6 @@
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-
   background: #ffffff;
   border-radius: 16px;
 }
@@ -231,16 +281,23 @@
 .student-over-tab-content .tab-pane .stu-assig-cards .assig-label-card {
   display: flex;
   flex-direction: column;
-
   padding: 0px;
   gap: 8px;
-
   width: 308px;
   height: 128px;
-
   background: #ffffff;
   border: 1px solid #eaedf1;
   border-radius: 8px;
+}
+@media screen and (max-width: 767px) {
+  .student-over-tab-content .tab-pane .stu-assig-cards > div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .student-over-tab-content .tab-pane .stu-assig-cards .assig-label-card {
+    width: 100%;
+  }
 }
 .student-over-tab-content .tab-pane .stu-assig-cards .assig-label-card .header {
   display: flex;
@@ -263,7 +320,7 @@
   padding: 8px;
 }
 .student-over-tab-content .tab-pane .stu-assig-cards .assig-label-card .tag-assig-tetaul h3 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -272,7 +329,7 @@
   color: #1a1a1a;
 }
 .student-over-tab-content .tab-pane .stu-assig-cards .assig-label-card .tag-assig-tetaul p {
-  font-family: 'Droid Sans';
+  font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -284,7 +341,6 @@
 .tags-body-polygon {
   width: 48px;
   height: 42px;
-  /* background-color: #979797; */
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   display: flex;
   align-items: center;

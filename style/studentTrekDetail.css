@@ -1,0 +1,45 @@
+.student-treks-detail-container {
+  margin: 0 auto;
+}
+.student-treks-detail-container .nav-section {
+  padding-top: 24px;
+}
+.student-treks-detail-container .nav-section ul {
+  margin: 0 0 24px;
+}
+.interpendence_content_section .student_text {
+  margin: 0;
+}
+.interpendence_content_section .interdependence_flx_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 516px) {
+  .interpendence_content_section .interdependence_flx_box {
+    gap: 24px;
+  }
+}
+.interdependence_flx_box .practice_btn_box {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+/*  pb-poly-body */
+.pb-poly-body {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 24px;
+  border: 1px solid #1fa5d4;
+}
+.tags-body-polygon {
+  background: #1fa5d4;
+}
+
+.tags-body-detail span {
+  color: #1fa5d4;
+}

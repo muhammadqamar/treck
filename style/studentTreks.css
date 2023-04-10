@@ -1,3 +1,12 @@
+.student-treks-container {
+  margin: 0 auto;
+}
+.student-treks-container .nav-section {
+  padding-top: 24px;
+}
+.student-treks-container .nav-section ul {
+  margin: 0 0 24px;
+}
 .main-student-treks .filter-treks {
   display: flex;
   align-items: center;
@@ -10,9 +19,13 @@
   border-radius: 16px;
   margin-bottom: 16px;
 }
-
+@media screen and (max-width: 580px) {
+  .main-student-treks .filter-treks .filter-by {
+    width: 100%;
+  }
+}
 .main-student-treks .filter-treks .filter-by h6 {
-  font-family: 'Droid Sans';
+  font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -29,7 +42,7 @@
   border-right: 0 !important;
   min-width: 96px !important;
   padding: 8px 6px !important;
-  font-family: 'Droid Sans';
+  font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -57,12 +70,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Droid Sans';
+  font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #bbbbbb;
+}
+@media screen and (max-width: 580px) {
+  .main-student-treks .filter-treks .filter-by .dropdown.student-treks .btn,
+  .main-student-treks .filter-treks .filter-by .date-input {
+    width: 100%;
+  }
 }
 .main-student-treks .filter-treks .filter-by .dropdown.student-treks .btn::after {
   display: none !important;
@@ -76,16 +95,8 @@
   color: #bbbbbb;
 }
 
-.main-student-treks
-  .filter-treks
-  .filter-by
-  .date-input
-  input[type='date']::-webkit-inner-spin-button,
-.main-student-treks
-  .filter-treks
-  .filter-by
-  .date-input
-  input[type='date']::-webkit-calendar-picker-indicator {
+.main-student-treks .filter-treks .filter-by .date-input input[type="date"]::-webkit-inner-spin-button,
+.main-student-treks .filter-treks .filter-by .date-input input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
@@ -105,7 +116,7 @@
 }
 .main-student-treks .filter-treks .student-short-by .filter-sort-by p {
   margin: 0;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -114,4 +125,14 @@
 }
 .main-student-treks .filter-treks .student-short-by a {
   margin: 0;
+}
+/* See & Clear All Styling */
+.clear_see_all {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #0b5d7a;
 }

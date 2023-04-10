@@ -4,7 +4,11 @@
   margin: 0 auto;
   padding: 0 64px 24px;
 }
-
+@media screen and (max-width: 992px) {
+  .main-student-dashboard {
+    padding: 0 24px 24px;
+  }
+}
 /* welcome card */
 .welcome-student {
   width: 100%;
@@ -27,7 +31,7 @@
   height: auto;
 }
 .welcome-student .student-about .stu-about h1 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -37,7 +41,7 @@
   color: #1a1a1a;
 }
 .welcome-student .student-about .stu-about p {
-  font-family: 'Droid Sans';
+  font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -77,7 +81,7 @@
 }
 .welcome-student .detail-prep-tags .tags-body .tags-body-detail span {
   margin: 0;
-  font-family: 'Droid Sans';
+  font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -86,7 +90,7 @@
 }
 .welcome-student .detail-prep-tags .tags-body .tags-body-detail p {
   margin: 0;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -146,7 +150,7 @@
 }
 
 .assignments-section .heading {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -180,7 +184,7 @@
   width: fit-content;
   height: 20px;
   border-radius: 4px;
-  font-family: 'Droid Sans';
+  font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -189,7 +193,7 @@
   margin: 0;
 }
 .assignments-section .assignments_label_card .assig_card h1 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 36px;
@@ -242,7 +246,7 @@
   border-bottom: 1px solid #eaedf1 !important;
   padding-bottom: 8px;
 
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -269,7 +273,7 @@
 }
 .report-dropdown .dropdown-menu .report-table table thead tr th {
   padding: 16px 8px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -278,7 +282,7 @@
 }
 
 .report-dropdown .dropdown-menu .report-table table tbody tr td {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 500 !important;
   font-size: 16px;
@@ -296,26 +300,10 @@
   border-bottom: 1px solid #eaedf1;
 }
 
-.report-dropdown
-  .dropdown-menu
-  .report-table
-  table
-  tbody
-  tr
-  td
-  .assignments-table-cs-td-poly
-  .polygon-shap {
+.report-dropdown .dropdown-menu .report-table table tbody tr td .assignments-table-cs-td-poly .polygon-shap {
   height: 42px !important;
 }
-.report-dropdown
-  .dropdown-menu
-  .report-table
-  table
-  tbody
-  tr
-  td
-  .assignments-table-cs-td-poly
-  .polygon-shap.reviewed-shap {
+.report-dropdown .dropdown-menu .report-table table tbody tr td .assignments-table-cs-td-poly .polygon-shap.reviewed-shap {
   background-color: #ca2738 !important;
 }
 
@@ -327,7 +315,7 @@
   height: 24px;
 
   border-radius: 8px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -358,7 +346,7 @@
   object-fit: cover;
 }
 .report-dropdown .dropdown-menu .report-table table tbody tr td .teacher h3 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
